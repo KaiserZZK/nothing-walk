@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public Transform movePoint;
 
     public LayerMask whatStopsMovement;
+
+    public Animator anim; 
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,11 @@ public class PlayerController : MonoBehaviour
                 }
             }
             
+            anim.SetBool("moving", false);
+        }
+        else
+        {
+            anim.SetBool("moving", true);
         }
         
     }

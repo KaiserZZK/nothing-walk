@@ -1101,6 +1101,7 @@ MonoBehaviour:
   whatStopsMovement:
     serializedVersion: 2
     m_Bits: 256
+  anim: {fileID: 1060546559}
 --- !u!4 &1060546558
 Transform:
   m_ObjectHideFlags: 0
