@@ -1,0 +1,2251 @@
+Unity Editor version:    2022.3.19f1 (244b723c30a6)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.2 (Build 24C101)
+Darwin version:          24.2.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        36864 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/zekaizhang/Documents/zk/gd/ONcgW
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56890
+Successfully changed project path to: /Users/zekaizhang/Documents/zk/gd/ONcgW
+/Users/zekaizhang/Documents/zk/gd/ONcgW
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8608711232] Host "[IP] 192.168.0.156 [Port] 0 [Flags] 2 [Guid] 3506219740 [EditorId] 3506219740 [Version] 1048832 [Id] OSXEditor(0,Zekais-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8608711232] Host "[IP] 192.168.0.156 [Port] 0 [Flags] 2 [Guid] 3506219740 [EditorId] 3506219740 [Version] 1048832 [Id] OSXEditor(0,Zekais-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 10 workers.
+Refreshing native plugins compatible for Editor in 5.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.19f1 (244b723c30a6)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/zekaizhang/Documents/zk/gd/ONcgW/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M3 Pro (high power)
+Metal devices available: 1
+0: Apple M3 Pro (high power)
+Using device Apple M3 Pro (high power)
+Initializing Metal device caps: Apple M3 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56895
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001664 seconds.
+- Loaded All Assemblies, in  0.191 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.112 seconds
+Domain Reload Profiling: 303ms
+	BeginReloadAssembly (61ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (77ms)
+		LoadAssemblies (61ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (75ms)
+			TypeCache.Refresh (74ms)
+				TypeCache.ScanAssembly (67ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (112ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (84ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (59ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.222 seconds
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.220 seconds
+Domain Reload Profiling: 442ms
+	BeginReloadAssembly (53ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (12ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (130ms)
+		LoadAssemblies (110ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (45ms)
+			TypeCache.Refresh (40ms)
+				TypeCache.ScanAssembly (32ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (220ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (159ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (16ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (39.9 KB). Loaded Objects now: 1995.
+Memory consumption went from 92.2 MB to 92.2 MB.
+Total: 1.927083 ms (FindLiveObjects: 0.049708 ms CreateObjectMapping: 0.019125 ms MarkObjects: 1.792750 ms  DeleteObjects: 0.065041 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 73444.389423 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_161.asset
+  artifactKey: Guid(b4f0af5ff36932a4790ed821dda85379) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_161.asset using Guid(b4f0af5ff36932a4790ed821dda85379) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4ce0f3061ce319d6bb06c8f2f408d6df') in 0.036132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_14.asset
+  artifactKey: Guid(c1929fcf2bc9d784488accc767478be5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_14.asset using Guid(c1929fcf2bc9d784488accc767478be5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '86cf8f5819ba5140b01d538eea82af0e') in 0.001823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_16.asset
+  artifactKey: Guid(024af361c9c91fc4fbba667bd906f7ef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_16.asset using Guid(024af361c9c91fc4fbba667bd906f7ef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e4fbefed8b2156871585108b50e27ab2') in 0.001726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_104.asset
+  artifactKey: Guid(d05882de40de2d4449aad710ef60eea1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_104.asset using Guid(d05882de40de2d4449aad710ef60eea1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2fd9fe5f14470552733d51569e5a304d') in 0.001728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_168.asset
+  artifactKey: Guid(5a9175724bc44664ea941fe6029d9efb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_168.asset using Guid(5a9175724bc44664ea941fe6029d9efb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '19ab43b7c651981ce8ece1f5b75a8582') in 0.002590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_100.asset
+  artifactKey: Guid(b9cc49efae364be4e925bc24b088af78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_100.asset using Guid(b9cc49efae364be4e925bc24b088af78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c6f3854e2bfab114f8d6b3d316cf5a2f') in 0.001728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_131.asset
+  artifactKey: Guid(807ce7de45da82643ba290ac21a44a6c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_131.asset using Guid(807ce7de45da82643ba290ac21a44a6c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '36eea14b023c3a455ef8a84bc6bcc15d') in 0.001561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_122.asset
+  artifactKey: Guid(7cdd62fb7ebba9a4db939067955435f1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_122.asset using Guid(7cdd62fb7ebba9a4db939067955435f1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6144a270c7425e95f0c3d0b6c54fa979') in 0.001696 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_159.asset
+  artifactKey: Guid(dd3c250391e6b564884f7f8f1aeafcfd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_159.asset using Guid(dd3c250391e6b564884f7f8f1aeafcfd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a76dc788dcf4cb3ba18dd95a2372994f') in 0.001482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_135.asset
+  artifactKey: Guid(1867709a049ee064295701ea3777412b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_135.asset using Guid(1867709a049ee064295701ea3777412b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'eafe276aa7b922db37397acc9be57e07') in 0.001592 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_1.asset
+  artifactKey: Guid(b340d2bc346996c48b4e9554395e6758) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_1.asset using Guid(b340d2bc346996c48b4e9554395e6758) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c7c299d980a55b6f4a8dd78e00cd7f23') in 0.001544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_126.asset
+  artifactKey: Guid(3e4b01d163b0d514a9003bfe7a73a134) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_126.asset using Guid(3e4b01d163b0d514a9003bfe7a73a134) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '743b5260f2dfceaf26cc2f12ec9c0034') in 0.001473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_127.asset
+  artifactKey: Guid(f23aebb0c0657824193952b1c3649c91) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_127.asset using Guid(f23aebb0c0657824193952b1c3649c91) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '29ae7e39ce7d49dce9bec2480f5f841c') in 0.001448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_178.asset
+  artifactKey: Guid(808b1bf09ee9e95438113706a02e73b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_178.asset using Guid(808b1bf09ee9e95438113706a02e73b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ca43f955800cbb0d672c0280bd68b5bd') in 0.001393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Art/snow-expansion.png
+  artifactKey: Guid(99862da1eb0cf41428c19e9ce2269db9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Art/snow-expansion.png using Guid(99862da1eb0cf41428c19e9ce2269db9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f42334a6bce8148866280c9606604a16') in 0.562851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 293
+========================================================================
+Received Import Request.
+  Time since last request: 0.058558 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_46.asset
+  artifactKey: Guid(80318385f9b27e84f88b6d3cf69db40c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_46.asset using Guid(80318385f9b27e84f88b6d3cf69db40c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e2e35159551cb12d8aaa64638e3cbef8') in 0.002406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_123.asset
+  artifactKey: Guid(f72af252203baec468e3befe30a61f55) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_123.asset using Guid(f72af252203baec468e3befe30a61f55) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f4c6f7ed3df739b176ce077adb5a542d') in 0.001986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_69.asset
+  artifactKey: Guid(47004d176298d1b47a1130a7c9a2c43f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_69.asset using Guid(47004d176298d1b47a1130a7c9a2c43f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e92c25c56b01508c4a8541fdab05ce0a') in 0.001570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_0.asset
+  artifactKey: Guid(cf90c60962861924a93bfd1e32c12535) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_0.asset using Guid(cf90c60962861924a93bfd1e32c12535) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '89caf67ce01f4d368cc9407154898cfb') in 0.001934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_87.asset
+  artifactKey: Guid(8570b73e19ffe9c49875326fc85a0f31) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_87.asset using Guid(8570b73e19ffe9c49875326fc85a0f31) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8619daa790fa7228eb92cbe9811ab21b') in 0.001744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_125.asset
+  artifactKey: Guid(d9aa757e7779c28448c0dd2e3f7d079b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_125.asset using Guid(d9aa757e7779c28448c0dd2e3f7d079b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3d45703f3051f8ce479be37b631185a5') in 0.003013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_130.asset
+  artifactKey: Guid(4f22aa7022ddfd6459d5180ae595fe53) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_130.asset using Guid(4f22aa7022ddfd6459d5180ae595fe53) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '23e3adb123dac398401e452e183f00fa') in 0.001738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_93.asset
+  artifactKey: Guid(38e426a91be1bb542a310914c12258bf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_93.asset using Guid(38e426a91be1bb542a310914c12258bf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7053fbb3b3d33a2e6f8aa774c5706649') in 0.001496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_83.asset
+  artifactKey: Guid(413c76bb85b1bc44a8d3a5679cf32b65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_83.asset using Guid(413c76bb85b1bc44a8d3a5679cf32b65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4dfbc4247c8abca682d8286135d404c7') in 0.001766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_50.asset
+  artifactKey: Guid(aab393e32460d834790add813463f40a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_50.asset using Guid(aab393e32460d834790add813463f40a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '61f3c481d0cacd9f1715ebcce4d50e19') in 0.001392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_96.asset
+  artifactKey: Guid(8917fa437e667214fba9200423bbeac5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_96.asset using Guid(8917fa437e667214fba9200423bbeac5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'de8f43f7b4e58b841f7605bf6f5d1ed9') in 0.001462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_65.asset
+  artifactKey: Guid(3b996a4a34605af48879bd3bce8e1a38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_65.asset using Guid(3b996a4a34605af48879bd3bce8e1a38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '851980431776558acbae9ea8c0d34a1c') in 0.001502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_51.asset
+  artifactKey: Guid(a391df4b66bdbbd4aa251536daac3e99) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_51.asset using Guid(a391df4b66bdbbd4aa251536daac3e99) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a6be33760ac30b1313fc98413c99fa27') in 0.001764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_67.asset
+  artifactKey: Guid(54dba49a2532667499859551921d60c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_67.asset using Guid(54dba49a2532667499859551921d60c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4d7d3e466f0f0e33f9a8fa7da679b470') in 0.001721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_58.asset
+  artifactKey: Guid(4171e651c77422a409a71e15473828d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_58.asset using Guid(4171e651c77422a409a71e15473828d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '945f5b9dc363ebd30d9f4f3ff5c6b8ff') in 0.001508 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_95.asset
+  artifactKey: Guid(dac685e886e8ae0448733d4f09bd7e25) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_95.asset using Guid(dac685e886e8ae0448733d4f09bd7e25) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b32ddbf888edda2bde0bfa498f5c004e') in 0.001620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_1.asset
+  artifactKey: Guid(b0b6639a53e9cc7478001c6e8b429ae6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_1.asset using Guid(b0b6639a53e9cc7478001c6e8b429ae6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9c94b60d543699474dc97da85aaa8e21') in 0.001890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_54.asset
+  artifactKey: Guid(432fc5569cb1a4b40b29830154cd4a78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_54.asset using Guid(432fc5569cb1a4b40b29830154cd4a78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a26814fc1e65ebaf2b37acbb08358e60') in 0.001586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_91.asset
+  artifactKey: Guid(db08c9384745be14db37687756f68100) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_91.asset using Guid(db08c9384745be14db37687756f68100) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7f3989ac93dabafe131f56d4fecd6f85') in 0.001548 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_63.asset
+  artifactKey: Guid(661b5c8825349d84895a86c6a06b8ef2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_63.asset using Guid(661b5c8825349d84895a86c6a06b8ef2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'cc0068d0dabd61ee44b5d32b65391de1') in 0.001535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_119.asset
+  artifactKey: Guid(e94e9768f5055ee4c9d4ba5abef89af1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_119.asset using Guid(e94e9768f5055ee4c9d4ba5abef89af1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd1baccffb257fbc6c8e76a09efe55ef6') in 0.001891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_84.asset
+  artifactKey: Guid(addec9ad5b17e224794b85a1b8a564fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_84.asset using Guid(addec9ad5b17e224794b85a1b8a564fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'aeb62138614014f611379520a51bb115') in 0.001765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_112.asset
+  artifactKey: Guid(506b730f5285b0242953741411bc01a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_112.asset using Guid(506b730f5285b0242953741411bc01a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'be734d4818a454871652a7295c467775') in 0.001734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_100.asset
+  artifactKey: Guid(933743d35e516484dad6527803ba4d19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_100.asset using Guid(933743d35e516484dad6527803ba4d19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5acc6da5d9621007b691d35c94a92b60') in 0.001718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_90.asset
+  artifactKey: Guid(66035d0801f7c9e42a6cb49c3c514cdf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_90.asset using Guid(66035d0801f7c9e42a6cb49c3c514cdf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e938f200a5edb20fea5828e0d430c272') in 0.001725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_7.asset
+  artifactKey: Guid(675c954f298f4dd45bf19b30263160c2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_7.asset using Guid(675c954f298f4dd45bf19b30263160c2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '72db99f7945c8cce01d1adf251105af9') in 0.001853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_75.asset
+  artifactKey: Guid(9078c4e6bf13a22448f5782eb767c874) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_75.asset using Guid(9078c4e6bf13a22448f5782eb767c874) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0d28e16e3b31f44d20203b8da21420b2') in 0.001557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_106.asset
+  artifactKey: Guid(6285f131b0b1e904cb45df079bc03285) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_106.asset using Guid(6285f131b0b1e904cb45df079bc03285) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a079a3d451d282d4080dda135e56d032') in 0.001735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_85.asset
+  artifactKey: Guid(8d4f00cf046e4344081318ae427a17d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_85.asset using Guid(8d4f00cf046e4344081318ae427a17d1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '93dcae2959ea7f7d32062aa0debee1e8') in 0.001463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_76.asset
+  artifactKey: Guid(1897daadae77ed74097e8b4d8a12a791) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_76.asset using Guid(1897daadae77ed74097e8b4d8a12a791) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ee23d686ca8cd5a72676ddbd13362dbc') in 0.001565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_113.asset
+  artifactKey: Guid(c64b6ea76dbe17f40a41497433417ffd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_113.asset using Guid(c64b6ea76dbe17f40a41497433417ffd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9c383b98acb7a1c76cc4866310739960') in 0.001658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_97.asset
+  artifactKey: Guid(ca63a5c9f35265140a6285f196f7a1a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_97.asset using Guid(ca63a5c9f35265140a6285f196f7a1a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'dcd624a84f275df34199692b9693f269') in 0.001400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_111.asset
+  artifactKey: Guid(1dd05b87927ef2c478aaab51330c423f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_111.asset using Guid(1dd05b87927ef2c478aaab51330c423f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f1f650f655f9b8bbec5e15921bc2f360') in 0.001700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_49.asset
+  artifactKey: Guid(87b4ddaa382ea264f9e07983c32c674d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_49.asset using Guid(87b4ddaa382ea264f9e07983c32c674d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f087c45e2d818cf9669b3786b4bdbdfd') in 0.002827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_53.asset
+  artifactKey: Guid(f6cad9c784d7a3447aa074f0dfcba4b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_53.asset using Guid(f6cad9c784d7a3447aa074f0dfcba4b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6bd03ad3af0992d083706a46f2d33aec') in 0.001470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_114.asset
+  artifactKey: Guid(06d9c70d71e9fec429e6349da3c83c19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_114.asset using Guid(06d9c70d71e9fec429e6349da3c83c19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ddb4d691bf425f9b218b832d4f60536a') in 0.001493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_66.asset
+  artifactKey: Guid(80963af74c1bf07429e26410f4a7db2a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_66.asset using Guid(80963af74c1bf07429e26410f4a7db2a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f71b2325b9827fb6297e3e7dace5d18e') in 0.001527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_78.asset
+  artifactKey: Guid(32ffe68740883d04e8bde0c938f443c3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_78.asset using Guid(32ffe68740883d04e8bde0c938f443c3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6eabd99db47f947ffaf2298ad2ff718e') in 0.001466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_107.asset
+  artifactKey: Guid(c0aa874e79755d54dad05a7cbdf12d28) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_107.asset using Guid(c0aa874e79755d54dad05a7cbdf12d28) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fcc21ed2ef15e67e3132fc515962a5d1') in 0.001832 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_80.asset
+  artifactKey: Guid(61a977a64a7ae884d9a9bb95688c5c58) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_80.asset using Guid(61a977a64a7ae884d9a9bb95688c5c58) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4086aee2317678c8bb69ce3fff687b7e') in 0.001631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_77.asset
+  artifactKey: Guid(c321bb54403391a489850dad839e0a2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_77.asset using Guid(c321bb54403391a489850dad839e0a2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c5e4272cc0fb57ee707fb51a355ec09d') in 0.001489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_126.asset
+  artifactKey: Guid(c1714f1cef07b4a48a0a251131c7357d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_126.asset using Guid(c1714f1cef07b4a48a0a251131c7357d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e8e4903a900f86f6cd81fa7358b1e397') in 0.001755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_132.asset
+  artifactKey: Guid(7450d926395464d42b1d25183ebd0109) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_132.asset using Guid(7450d926395464d42b1d25183ebd0109) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a99bd87b526ddafcf9315857c0369bd1') in 0.001536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_5.asset
+  artifactKey: Guid(ac87e644e9d7c53458424e220dedc6c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_5.asset using Guid(ac87e644e9d7c53458424e220dedc6c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd1ece51113737e2e9bfb9993c3cbf6ca') in 0.001467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_57.asset
+  artifactKey: Guid(14b6db1c172b6bb479b1c18415e7a9dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_57.asset using Guid(14b6db1c172b6bb479b1c18415e7a9dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bb878b9992e0a40ebd42c151a5427434') in 0.001356 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_11.asset
+  artifactKey: Guid(aa54e1cec999d0646a11af45eeed335f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_11.asset using Guid(aa54e1cec999d0646a11af45eeed335f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ce26651c78eb7f87f0a9d8be8143364d') in 0.001543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_117.asset
+  artifactKey: Guid(d69b7ed14ee731f479be6de8f79f64bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_117.asset using Guid(d69b7ed14ee731f479be6de8f79f64bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1cf781854457e3655274925dc27b1cff') in 0.001682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_59.asset
+  artifactKey: Guid(665808e226a04b44bb7c75e8ed34ac64) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_59.asset using Guid(665808e226a04b44bb7c75e8ed34ac64) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'aa0a996d5d5373b348e53a2f8e812c2c') in 0.001953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_128.asset
+  artifactKey: Guid(754984883e272794aa4ac74fdcb3aae1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_128.asset using Guid(754984883e272794aa4ac74fdcb3aae1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '854e0ba1053ccc8d6bd14052e9aafd12') in 0.005303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Tiles/Dungeon/dungeon_sheet_68.asset
+  artifactKey: Guid(229b0017fffeb3b4ba44ae948796e938) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Dungeon/dungeon_sheet_68.asset using Guid(229b0017fffeb3b4ba44ae948796e938) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '82f1d13aaebfc027ab5b1c142fde7722') in 0.001818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_121.asset
+  artifactKey: Guid(9372e042618bd314d9ab247d675acada) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_121.asset using Guid(9372e042618bd314d9ab247d675acada) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '739961f1bf6c77a0d10b57ae72ec655c') in 0.001550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.390852 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_134.asset
+  artifactKey: Guid(318c8d5ac26a4e743aeb5138084e143d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_134.asset using Guid(318c8d5ac26a4e743aeb5138084e143d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2a6e698449b7886f2a0b1e1037db0c83') in 0.009289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_236.asset
+  artifactKey: Guid(e9361f08b09f3c1409f9ed6745a71491) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_236.asset using Guid(e9361f08b09f3c1409f9ed6745a71491) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'cfd952e10c52c6c281da996256b39dcf') in 0.005816 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_143.asset
+  artifactKey: Guid(7f55716cdbe7acf48bf85ca649556f51) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_143.asset using Guid(7f55716cdbe7acf48bf85ca649556f51) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '019c1d94bf277def84fa7d7b1039b3fd') in 0.004360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_22.asset
+  artifactKey: Guid(1803c1426856fa0479dbb48a22ecba91) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_22.asset using Guid(1803c1426856fa0479dbb48a22ecba91) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0e9298e251b1b46db14def2da02c02f1') in 0.003642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_158.asset
+  artifactKey: Guid(ff4d05b2e9bb25b449a5257b24597074) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_158.asset using Guid(ff4d05b2e9bb25b449a5257b24597074) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3885849a6bebc6fe9d8abd43c447a279') in 0.002912 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_206.asset
+  artifactKey: Guid(3f62e930d81fb144cab6b9f8649f3d13) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_206.asset using Guid(3f62e930d81fb144cab6b9f8649f3d13) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '16ba3bab1e76cc81b8a64a8f391c6c8c') in 0.003145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_231.asset
+  artifactKey: Guid(53862d4b9c4c9574aa8bf19f30007c35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_231.asset using Guid(53862d4b9c4c9574aa8bf19f30007c35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c881c4e347f58f9df8d5a8896e9ba46a') in 0.002577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_255.asset
+  artifactKey: Guid(ac97b77a76e603f44bd3346f2213eb54) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_255.asset using Guid(ac97b77a76e603f44bd3346f2213eb54) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f923f733891819d0cbc173052d8277fa') in 0.002565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_223.asset
+  artifactKey: Guid(0d17c68dd9dac694aab64d74b80d6a4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_223.asset using Guid(0d17c68dd9dac694aab64d74b80d6a4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a59d36ec5244e33968a6921df87b080b') in 0.004465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_224.asset
+  artifactKey: Guid(3ea063cb191b65041aed4f34e55cd5ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_224.asset using Guid(3ea063cb191b65041aed4f34e55cd5ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0666f51b6e848668111f4852b9ac2744') in 0.002594 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_146.asset
+  artifactKey: Guid(c89284fbd991ce648907b75a9022aed4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_146.asset using Guid(c89284fbd991ce648907b75a9022aed4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f241421bbc7c310d12d776f63fc4334b') in 0.002201 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_162.asset
+  artifactKey: Guid(f5f144172280b684b87d001ed162fec1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_162.asset using Guid(f5f144172280b684b87d001ed162fec1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '40ef4e782a8765b9041293746951ad52') in 0.002430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_150.asset
+  artifactKey: Guid(6464443898f49cb41861388b946bd935) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_150.asset using Guid(6464443898f49cb41861388b946bd935) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e1bc171638e8f54c36ff89823e3cb0dc') in 0.001960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_225.asset
+  artifactKey: Guid(c505b45acda383f4d88f7a7dc573626b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_225.asset using Guid(c505b45acda383f4d88f7a7dc573626b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0eea17f79165686319e3ba79fa532c49') in 0.002197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_219.asset
+  artifactKey: Guid(ff1dcdcab54053e45b7289992edf519c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_219.asset using Guid(ff1dcdcab54053e45b7289992edf519c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9dcc6890861606eb08e232c6e0e1e228') in 0.001756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_252.asset
+  artifactKey: Guid(096d55eaf066c944badb0b9108fd2f27) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_252.asset using Guid(096d55eaf066c944badb0b9108fd2f27) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '807019db40c2427e95ab9603d312e72b') in 0.001865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_211.asset
+  artifactKey: Guid(7071b250a55aea54c941e794731d33e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_211.asset using Guid(7071b250a55aea54c941e794731d33e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd61fb57819ae516db51df2996f7dd4d5') in 0.001781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_147.asset
+  artifactKey: Guid(a62844a7d32e3f24eb3a3cf14b529a25) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_147.asset using Guid(a62844a7d32e3f24eb3a3cf14b529a25) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7051c5fe55cd758568de528245e952a3') in 0.001758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_226.asset
+  artifactKey: Guid(f062886e4255c1f4aa360372687e734d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_226.asset using Guid(f062886e4255c1f4aa360372687e734d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'daa26e3b50c662ee0ebfafb044125622') in 0.001824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_181.asset
+  artifactKey: Guid(7a122b615c7aaef4ea74f850fa0c0052) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_181.asset using Guid(7a122b615c7aaef4ea74f850fa0c0052) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '73e9420057e880f24edce5281660aae3') in 0.001926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_243.asset
+  artifactKey: Guid(53d5e6aa53250704da821b20d9124bb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_243.asset using Guid(53d5e6aa53250704da821b20d9124bb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1fa1b43c2f6ede1be09eb53e42c29c0e') in 0.001694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_250.asset
+  artifactKey: Guid(549137620c77b9849bab1603ee479e90) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_250.asset using Guid(549137620c77b9849bab1603ee479e90) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0696354773eef466ce6529f8f25fb30d') in 0.001634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_161.asset
+  artifactKey: Guid(a709cd1bfe3e95a41bf636831cce6c9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_161.asset using Guid(a709cd1bfe3e95a41bf636831cce6c9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b6acce20af4cc4bf7229fae4467520f2') in 0.001729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_261.asset
+  artifactKey: Guid(113056929e1434f45bb4ab1eabef6beb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_261.asset using Guid(113056929e1434f45bb4ab1eabef6beb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e1cebd7db86d3a8a8eaa25cc5185a42a') in 0.001713 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_210.asset
+  artifactKey: Guid(1754edb8bc4965f44ad1217094a4bcc9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_210.asset using Guid(1754edb8bc4965f44ad1217094a4bcc9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c52959a641cb8fc7fde1a8e55002eef0') in 0.001663 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_16.asset
+  artifactKey: Guid(5dcab64d8e357594899fca34a5ac9241) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_16.asset using Guid(5dcab64d8e357594899fca34a5ac9241) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e598750a72717741170c1338d3fbc157') in 0.001765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_141.asset
+  artifactKey: Guid(bbbf2e92c7926f74295dab0b4c9c9635) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_141.asset using Guid(bbbf2e92c7926f74295dab0b4c9c9635) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7f849ce52c02182236a46806e355d110') in 0.001744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_254.asset
+  artifactKey: Guid(3baa06ee08aa78f478d5e2d66629f3ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_254.asset using Guid(3baa06ee08aa78f478d5e2d66629f3ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '88e3aaf05ed4f93038e4dcf3f3bf2b82') in 0.001552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_251.asset
+  artifactKey: Guid(062fad5e3210eb746b8d0eb94e4b1bed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_251.asset using Guid(062fad5e3210eb746b8d0eb94e4b1bed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a8d858a899f72fae52fe871ee21d7c58') in 0.001616 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_208.asset
+  artifactKey: Guid(91b449572d09f4c478661148314accb6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_208.asset using Guid(91b449572d09f4c478661148314accb6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '77bf1b16ecc7b9c5734c78f94a0097bd') in 0.001575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_157.asset
+  artifactKey: Guid(ee2a8af7daed05c4c8b61cf8ebc6938d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_157.asset using Guid(ee2a8af7daed05c4c8b61cf8ebc6938d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c2042146d33ea307c2234cfb3084d99d') in 0.001621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_247.asset
+  artifactKey: Guid(2bb7b1c36a1414a4dbbf2381d7dd6527) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_247.asset using Guid(2bb7b1c36a1414a4dbbf2381d7dd6527) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ba958f04ab04e9d28c01e6d20f80d779') in 0.001758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_177.asset
+  artifactKey: Guid(b542e3d742e309b43a3cda6329ee6254) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_177.asset using Guid(b542e3d742e309b43a3cda6329ee6254) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1e640aabcf72c0c6e4c4778112d886ef') in 0.001570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_191.asset
+  artifactKey: Guid(2ea6be9c4a43a9d4a8e227cb5b7cac6d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_191.asset using Guid(2ea6be9c4a43a9d4a8e227cb5b7cac6d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0a20b887034e952bea5ecb539af9b05c') in 0.002802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_217.asset
+  artifactKey: Guid(1b96c28af1faab741a409a3fe64d902e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_217.asset using Guid(1b96c28af1faab741a409a3fe64d902e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b070f2a6b286e03e78f32be394974384') in 0.001805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_264.asset
+  artifactKey: Guid(9cac300b4c1fc6b469078e01f40eded2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_264.asset using Guid(9cac300b4c1fc6b469078e01f40eded2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4a131a5c9c158c181edec313f7cd352f') in 0.001795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_215.asset
+  artifactKey: Guid(6dfe8739006ee0840884ded0f4ef0f70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_215.asset using Guid(6dfe8739006ee0840884ded0f4ef0f70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c2758f0a27acbad112d5e590ef2eed40') in 0.001689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_144.asset
+  artifactKey: Guid(d3897248f7528da40b3db5877d928ad5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_144.asset using Guid(d3897248f7528da40b3db5877d928ad5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fa7329cb65cd8e2eea386b89ac080418') in 0.001663 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_180.asset
+  artifactKey: Guid(b8c38f3c7d9ba79419a94f547771abc7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_180.asset using Guid(b8c38f3c7d9ba79419a94f547771abc7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8863e3be817c7d10fdb0442e8b59e7c7') in 0.001384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_189.asset
+  artifactKey: Guid(d21f00f6206a60e438fa7f5e786e4520) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_189.asset using Guid(d21f00f6206a60e438fa7f5e786e4520) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '23134ff1baa87bb09b94d24745f6fa48') in 0.001325 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_137.asset
+  artifactKey: Guid(66052e7e34a51934dadcb7badb56fcee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_137.asset using Guid(66052e7e34a51934dadcb7badb56fcee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3845f0ef6402f63bd07589c0dd91d679') in 0.001465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_176.asset
+  artifactKey: Guid(a0624dfd743d050409cfc237202dd6e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_176.asset using Guid(a0624dfd743d050409cfc237202dd6e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a9658b119bc4b5da51bc57c892f5f130') in 0.001636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_259.asset
+  artifactKey: Guid(b4ae54ba144e6d44c86883beb29e175e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_259.asset using Guid(b4ae54ba144e6d44c86883beb29e175e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '62a96d632b750a3f91c2448d7808c60a') in 0.001761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_193.asset
+  artifactKey: Guid(49aba025a4d3ccd428bb10357cb50143) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_193.asset using Guid(49aba025a4d3ccd428bb10357cb50143) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8ed001842dcb53341913e3f5e3ea7832') in 0.001821 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_15.asset
+  artifactKey: Guid(34542324e1d649d4085f40b0aeb031f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_15.asset using Guid(34542324e1d649d4085f40b0aeb031f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '03677c97bed3dfddeffe47e63c1c3519') in 0.001501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_184.asset
+  artifactKey: Guid(842d303146898fd438d255bc25548e47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_184.asset using Guid(842d303146898fd438d255bc25548e47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '87e2ae6758ce5b0b8d061dba9ad6242d') in 0.001490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_227.asset
+  artifactKey: Guid(5f104eac3ca4be644a4b0d5384041f29) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_227.asset using Guid(5f104eac3ca4be644a4b0d5384041f29) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0e5417333f46ae88d01b32b00cd28612') in 0.001673 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_221.asset
+  artifactKey: Guid(e1d3b2ef6aefac54089dc6e741d605de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_221.asset using Guid(e1d3b2ef6aefac54089dc6e741d605de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '69c18f0762b6b171350cb72ca65f2ab7') in 0.001734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_149.asset
+  artifactKey: Guid(d467b4a1e948fee4bb1054a8fc9a0b63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_149.asset using Guid(d467b4a1e948fee4bb1054a8fc9a0b63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e04dc3f8d17fee8a86fd44ae317fe5fb') in 0.001663 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_198.asset
+  artifactKey: Guid(50c64826d87318e44a647555a7875e23) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_198.asset using Guid(50c64826d87318e44a647555a7875e23) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '49f6e41de831d77917602a57890f0f30') in 0.001863 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_138.asset
+  artifactKey: Guid(704c67d16868858468cb453671fec013) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_138.asset using Guid(704c67d16868858468cb453671fec013) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '33049c910c78e8888886a4f259fb45ac') in 0.001682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_169.asset
+  artifactKey: Guid(389424e0865fe9148bcf4a4df826bc7a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_169.asset using Guid(389424e0865fe9148bcf4a4df826bc7a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'df911a03292dd1759bbe989171437204') in 0.001673 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_167.asset
+  artifactKey: Guid(eb7e95aeccf43d54ab21bc75aed41df0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_167.asset using Guid(eb7e95aeccf43d54ab21bc75aed41df0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5ae878b01df4cf901eba368683c10087') in 0.001639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_152.asset
+  artifactKey: Guid(d14f6a85bc0d92d4386f14823d3a6832) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_152.asset using Guid(d14f6a85bc0d92d4386f14823d3a6832) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5d2939683f3bc7b745250ffadcb14fb9') in 0.001538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_201.asset
+  artifactKey: Guid(630887faf20e0cd46bf8607732a5e22e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_201.asset using Guid(630887faf20e0cd46bf8607732a5e22e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4be9cd92f6a2571cbedeb3e28e3f87de') in 0.001558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_154.asset
+  artifactKey: Guid(e40d03f23d5e8de46af215256a54bc86) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_154.asset using Guid(e40d03f23d5e8de46af215256a54bc86) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f9ae4aa5d43ad33c5e44737966a75c98') in 0.001810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_242.asset
+  artifactKey: Guid(024158006debfdb4f9606c845586fe0f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_242.asset using Guid(024158006debfdb4f9606c845586fe0f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c070587baea5e5713169ed286663f2b4') in 0.001756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_258.asset
+  artifactKey: Guid(ab6fbc636af6393499246645f39e3b67) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_258.asset using Guid(ab6fbc636af6393499246645f39e3b67) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f8477daea42756c6b82851c03c27686a') in 0.001646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_241.asset
+  artifactKey: Guid(837d2114490d1bc478bb2a58c6f3411c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_241.asset using Guid(837d2114490d1bc478bb2a58c6f3411c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '923224fd8a185f07658b3554a7e1f8fb') in 0.002918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_230.asset
+  artifactKey: Guid(c815f801694a3c94e926f98418d5537e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_230.asset using Guid(c815f801694a3c94e926f98418d5537e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a26e15affd16e0d852938e2033ae439d') in 0.001723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_187.asset
+  artifactKey: Guid(f03e664b97aa44a47afe1be9d22b78c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_187.asset using Guid(f03e664b97aa44a47afe1be9d22b78c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '99858a570b94f697a6cf15af75c3acf2') in 0.001809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_240.asset
+  artifactKey: Guid(291aa5f38057fd346b66dea8e54d923d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_240.asset using Guid(291aa5f38057fd346b66dea8e54d923d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '064013c9c91b0580ab18d9947bf20e1e') in 0.001711 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_188.asset
+  artifactKey: Guid(2d880eee145739a48a9cce3d6eee7d77) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_188.asset using Guid(2d880eee145739a48a9cce3d6eee7d77) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e6e976e5c27906da593c0f0653257507') in 0.001564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_164.asset
+  artifactKey: Guid(8fac8203a305e9448a5ffcf72c3c80bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_164.asset using Guid(8fac8203a305e9448a5ffcf72c3c80bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '33ba7b3ef8051fb121f40778249cb33e') in 0.001703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_160.asset
+  artifactKey: Guid(1e5ca74d9fcf0464cb6bbe9b51e01d3f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_160.asset using Guid(1e5ca74d9fcf0464cb6bbe9b51e01d3f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '97e10dbf9ad2c8f204eb3cf48a8b0140') in 0.001739 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_186.asset
+  artifactKey: Guid(ae832ae01f9a6b94d9fa5fead7061af9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_186.asset using Guid(ae832ae01f9a6b94d9fa5fead7061af9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4277ee8bc74498ae863057b58e7b6a62') in 0.001661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_19.asset
+  artifactKey: Guid(26d48dbb96ce1474099645b5b701a358) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_19.asset using Guid(26d48dbb96ce1474099645b5b701a358) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5243978006121c778a6555ae84334eda') in 0.001598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_196.asset
+  artifactKey: Guid(6f4ca701baae8574d858bbd250661328) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_196.asset using Guid(6f4ca701baae8574d858bbd250661328) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd7e54b6bc6740af2dafb1c04e80da801') in 0.001834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_25.asset
+  artifactKey: Guid(2ab2993aaceec0842a95df61ad81ab4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_25.asset using Guid(2ab2993aaceec0842a95df61ad81ab4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6f95790c182d17f92909383970237b5e') in 0.001598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_151.asset
+  artifactKey: Guid(2dca1ce0b651f494c8692e5393657384) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_151.asset using Guid(2dca1ce0b651f494c8692e5393657384) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '70b0727e2409697a29e542bfaf27514e') in 0.001794 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_24.asset
+  artifactKey: Guid(60769e0ce39957a419ed16cbc881224d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_24.asset using Guid(60769e0ce39957a419ed16cbc881224d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c53e25073a854087d240487ffd3c59cc') in 0.001627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_214.asset
+  artifactKey: Guid(017e38043396728459de6a4a63a05726) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_214.asset using Guid(017e38043396728459de6a4a63a05726) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0c2189d224ee9d48d49948bafc7bbb73') in 0.001528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_268.asset
+  artifactKey: Guid(f5e9b5e78db16364fa39b07d60eb6fc8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_268.asset using Guid(f5e9b5e78db16364fa39b07d60eb6fc8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '97dad88317b43650171d4eee127a70d5') in 0.001642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_166.asset
+  artifactKey: Guid(ec827d39c1129354ba0b238917da1782) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_166.asset using Guid(ec827d39c1129354ba0b238917da1782) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a33e8ee8a68d61c441700511c3318581') in 0.001772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.346628 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_269.asset
+  artifactKey: Guid(b49e0b578503b9a40a6c5344a2142fce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_269.asset using Guid(b49e0b578503b9a40a6c5344a2142fce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '002ef3d4ab9abfe6aa7997e870c1801d') in 0.008665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_37.asset
+  artifactKey: Guid(0bf2260f4479846488ce4d6a55fe3bf7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_37.asset using Guid(0bf2260f4479846488ce4d6a55fe3bf7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0e725d694b79bef36c9a5830043d4637') in 0.005039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_30.asset
+  artifactKey: Guid(18f47f66e4abe8f4993822c5b61b525d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_30.asset using Guid(18f47f66e4abe8f4993822c5b61b525d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'cc90131831c123af1a8a060b76112e60') in 0.004382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_68.asset
+  artifactKey: Guid(abd9b775c89774242ab18f86a07a8983) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_68.asset using Guid(abd9b775c89774242ab18f86a07a8983) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7d3004ebd073bc61822365be672d0caa') in 0.003119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_41.asset
+  artifactKey: Guid(d64711e80c6b815478973b97f02ad1fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_41.asset using Guid(d64711e80c6b815478973b97f02ad1fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e69ae4a92b8c903d18898ca1b27aeca1') in 0.002864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_51.asset
+  artifactKey: Guid(30548a4a477d7ea4bb9187de96a14ef7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_51.asset using Guid(30548a4a477d7ea4bb9187de96a14ef7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'df07100db2ddac1d89debafec854c1c2') in 0.002670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_274.asset
+  artifactKey: Guid(6b10b9a2e3e73ec4fa78d81fbdfd3ed9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_274.asset using Guid(6b10b9a2e3e73ec4fa78d81fbdfd3ed9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8baf28dc4f3b8fe15845891a5f677188') in 0.002388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_78.asset
+  artifactKey: Guid(017ae8685aa5b044cbdd1dde2dc8a755) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_78.asset using Guid(017ae8685aa5b044cbdd1dde2dc8a755) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c5930d9ad8a3ef5a6d240b31c38f34a4') in 0.002460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_96.asset
+  artifactKey: Guid(712af2fa29aa73e43bebbc87294f38e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_96.asset using Guid(712af2fa29aa73e43bebbc87294f38e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '843cdb18dcb0c11ef52294bdeee2e4f6') in 0.002060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_90.asset
+  artifactKey: Guid(42649b03b736f6647ba9b00d1bb7d8ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_90.asset using Guid(42649b03b736f6647ba9b00d1bb7d8ce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '85bc27bf450713bef259a421e552a1ed') in 0.003833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_49.asset
+  artifactKey: Guid(336c1918937b27f44997b34452bded69) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_49.asset using Guid(336c1918937b27f44997b34452bded69) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3d08c518b109b2a00c711a38832aa302') in 0.001914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_53.asset
+  artifactKey: Guid(3fbf2376409433847834c6045c6c6c00) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_53.asset using Guid(3fbf2376409433847834c6045c6c6c00) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9eed0c0c156c5c22e91e30c1d2307e0f') in 0.001861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_44.asset
+  artifactKey: Guid(e33ed0c32aaecdc4c9c9aa349ac4083e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_44.asset using Guid(e33ed0c32aaecdc4c9c9aa349ac4083e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6adc4da996e79cde1c926e8bb7623013') in 0.001998 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_88.asset
+  artifactKey: Guid(9a38fefa9387ed24fa51cf319ec8a333) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_88.asset using Guid(9a38fefa9387ed24fa51cf319ec8a333) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '95fcee6026994bce298ed18de6319b4c') in 0.001940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_34.asset
+  artifactKey: Guid(9d9f49543da873844a4755dbe942f465) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_34.asset using Guid(9d9f49543da873844a4755dbe942f465) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '24970c17b6a54fa600f3c883edc7be6b') in 0.001975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_92.asset
+  artifactKey: Guid(9ce08bcad4577d7429b03b48bfce1489) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_92.asset using Guid(9ce08bcad4577d7429b03b48bfce1489) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '827655e4e1e254e316efd68b500925d6') in 0.001949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_31.asset
+  artifactKey: Guid(3d383fba3dcb89c4a8d567b6b934692e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_31.asset using Guid(3d383fba3dcb89c4a8d567b6b934692e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e1ba647fab70cb15241f9bee06ab1c65') in 0.002025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_287.asset
+  artifactKey: Guid(6d9badc6956093d4da7942dafc53bca9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_287.asset using Guid(6d9badc6956093d4da7942dafc53bca9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '577c2ca1c609416b6f8f9a8c62088aa9') in 0.001870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_4.asset
+  artifactKey: Guid(a6892b9b492af894788963e067a58f8e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_4.asset using Guid(a6892b9b492af894788963e067a58f8e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a28bb745a34aff46dc623f4c152cdacf') in 0.001636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_32.asset
+  artifactKey: Guid(42a409bfd2ab8a64681999b912fffb24) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_32.asset using Guid(42a409bfd2ab8a64681999b912fffb24) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '32894e58b87ed70403a5b0db876f1c79') in 0.002074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_281.asset
+  artifactKey: Guid(df250c18f442913428c238feb9a28684) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_281.asset using Guid(df250c18f442913428c238feb9a28684) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fc3b6da4b3699ac72a4155d2b4bd58db') in 0.001756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_74.asset
+  artifactKey: Guid(8c6c4ad64a045da4198de1dbd52f2ab2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_74.asset using Guid(8c6c4ad64a045da4198de1dbd52f2ab2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '15c4207047b3b619625cff8465a4e22a') in 0.001683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_7.asset
+  artifactKey: Guid(87b87cce42e15864099e2ba6d6d3725e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_7.asset using Guid(87b87cce42e15864099e2ba6d6d3725e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7d45bf4655038d3e3df102d966a3011c') in 0.001644 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_75.asset
+  artifactKey: Guid(d9a74f8a70e532e439bf1eddc70cc981) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_75.asset using Guid(d9a74f8a70e532e439bf1eddc70cc981) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5defca3c28c1d0c75d431c0c2a33ab94') in 0.001514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_62.asset
+  artifactKey: Guid(dbdfcac2b3f19c24883952eec74e909a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_62.asset using Guid(dbdfcac2b3f19c24883952eec74e909a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bb7bb3cd16340bb3367a63e11208aa27') in 0.001374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_56.asset
+  artifactKey: Guid(7e004b155863a5942a1b14f547654b38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_56.asset using Guid(7e004b155863a5942a1b14f547654b38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd8c349074bd373127df607b22ba9e65a') in 0.001584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_76.asset
+  artifactKey: Guid(d79d4d8f5bde1864481001c0a7a826ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_76.asset using Guid(d79d4d8f5bde1864481001c0a7a826ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8162903cbf2c86199ac9a6450e66b785') in 0.001734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_272.asset
+  artifactKey: Guid(98fa1980ea5fdaa4b8dfdc4a77e7b482) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_272.asset using Guid(98fa1980ea5fdaa4b8dfdc4a77e7b482) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a4d54a88e52a44271030c0e8bdee5d35') in 0.001653 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_95.asset
+  artifactKey: Guid(99d64a7c2e1152d408bb1016155c292f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_95.asset using Guid(99d64a7c2e1152d408bb1016155c292f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '66bd04524e032cd3bac88a51ad4f5ea3') in 0.001734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_38.asset
+  artifactKey: Guid(2beda86d88089b44bb4c0c848be3364a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_38.asset using Guid(2beda86d88089b44bb4c0c848be3364a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fd9065e8e1d142be5fccca182ef79a9c') in 0.001617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_42.asset
+  artifactKey: Guid(83c11f21fb513a64fb7646e495165c33) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_42.asset using Guid(83c11f21fb513a64fb7646e495165c33) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '03b6bea623f14ae86053d5ff4e85cbc8') in 0.001500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_273.asset
+  artifactKey: Guid(10ed3f123e0aa0e4eae04f9037369332) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_273.asset using Guid(10ed3f123e0aa0e4eae04f9037369332) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c416f1b17ced3e4614c928a2400cbcc0') in 0.001626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_289.asset
+  artifactKey: Guid(ae7fe293060c1d0459dfba6f3c295508) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_289.asset using Guid(ae7fe293060c1d0459dfba6f3c295508) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '99534d7d13a9f96b27960195c2286c53') in 0.001597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_3.asset
+  artifactKey: Guid(ee7a63c719a4cad41b770832405b4f0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_3.asset using Guid(ee7a63c719a4cad41b770832405b4f0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7e8cfc5df6bdedaee1e132bd4f47c0b5') in 0.001393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_81.asset
+  artifactKey: Guid(ab5fdb31d92686849860b90294510f99) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_81.asset using Guid(ab5fdb31d92686849860b90294510f99) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '27289d5826056a269f65a43f7c9d8889') in 0.002798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_33.asset
+  artifactKey: Guid(69a6e58807f730341ac5f9ae40f75f32) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_33.asset using Guid(69a6e58807f730341ac5f9ae40f75f32) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7b2a222f8ec151d3a331f1644c56178a') in 0.001501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_288.asset
+  artifactKey: Guid(61a61920fafc1ac428f22d8cd726e3aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_288.asset using Guid(61a61920fafc1ac428f22d8cd726e3aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '50c155725314ac5c5222cd6fff0f5dda') in 0.001498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_282.asset
+  artifactKey: Guid(dfdf7b542b708c54d8d4a80196c4d6ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_282.asset using Guid(dfdf7b542b708c54d8d4a80196c4d6ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3d44fee28502903a159ba9ab77a39adb') in 0.001627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_93.asset
+  artifactKey: Guid(aa26318c57e57204baa7291203fb6782) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_93.asset using Guid(aa26318c57e57204baa7291203fb6782) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4010b37e28bc0541f0467109efcd511a') in 0.001706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_99.asset
+  artifactKey: Guid(325e7b91924773d468708f8956e74042) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_99.asset using Guid(325e7b91924773d468708f8956e74042) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'cd05b5ff1c7f023d6d4e9f2a83a1ba73') in 0.001608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_271.asset
+  artifactKey: Guid(a7dd6eb65703e4c4cb29095854e91972) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_271.asset using Guid(a7dd6eb65703e4c4cb29095854e91972) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4d699ad09324b65f988fefd38e8bab8e') in 0.001900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_84.asset
+  artifactKey: Guid(c9b4361adb945134eb3b70bb757d1583) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_84.asset using Guid(c9b4361adb945134eb3b70bb757d1583) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f8a935a52f41d77d57ff2dd4463ad22a') in 0.001741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_60.asset
+  artifactKey: Guid(17862fb781984064d9049c53b40b8e65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_60.asset using Guid(17862fb781984064d9049c53b40b8e65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'feb6e3bdcc0316ab8f0ea1bd6dd50250') in 0.001478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_284.asset
+  artifactKey: Guid(fc6822f8da955df47a82b115903480f0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_284.asset using Guid(fc6822f8da955df47a82b115903480f0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8b0ff109e1a171e393ffbc3378a84d2e') in 0.001565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_91.asset
+  artifactKey: Guid(a961221d603832243a06584fadea6e44) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_91.asset using Guid(a961221d603832243a06584fadea6e44) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '084287706e314f025b86cbf2d27fdcf9') in 0.001757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_55.asset
+  artifactKey: Guid(bc8c7db5994d98a438a6203cc6159376) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_55.asset using Guid(bc8c7db5994d98a438a6203cc6159376) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ecd85a46d8f76850b51e6cacd564f4f0') in 0.001625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_69.asset
+  artifactKey: Guid(4a5ba266ace1e9a42b8d2446b3f67600) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_69.asset using Guid(4a5ba266ace1e9a42b8d2446b3f67600) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '787955d04cf49b46bb17ab66144fcb19') in 0.001723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_43.asset
+  artifactKey: Guid(838127bb5c06bba43b53df804d965bb1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_43.asset using Guid(838127bb5c06bba43b53df804d965bb1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '615ba5de152e76803ab29d487348eb71') in 0.001608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_73.asset
+  artifactKey: Guid(dfdd539af74b38046bd4deb24c786e5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_73.asset using Guid(dfdd539af74b38046bd4deb24c786e5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7872ef28f43e56d76cd85587e455c93e') in 0.001590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Tiles/Floating/snow-expansion_80.asset
+  artifactKey: Guid(6c14d997865a40f4aa8c1a0b794ac428) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Tiles/Floating/snow-expansion_80.asset using Guid(6c14d997865a40f4aa8c1a0b794ac428) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2ee6ab6ee3e1be85932dcd54b4a07c98') in 0.001650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 65.572320 seconds.
+  path: Assets/Art/snow-expansion.png
+  artifactKey: Guid(99862da1eb0cf41428c19e9ce2269db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/snow-expansion.png using Guid(99862da1eb0cf41428c19e9ce2269db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf1cc03f8553e49bcdd18c0ee5c4d80') in 0.313909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 293
+========================================================================
+Received Import Request.
+  Time since last request: 623.801310 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(0fe36b19fa195994593e66bdeb422a1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/PlayerController.cs using Guid(0fe36b19fa195994593e66bdeb422a1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '34020508818e6055521c35e54e457a1b') in 0.003822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x17dde7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.314 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.419 seconds
+Domain Reload Profiling: 733ms
+	BeginReloadAssembly (167ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (109ms)
+		LoadAssemblies (119ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (419ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (164ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (18ms)
+			ProcessInitializeOnLoadAttributes (130ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1520 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (28.2 KB). Loaded Objects now: 2007.
+Memory consumption went from 106.4 MB to 106.4 MB.
+Total: 2.250083 ms (FindLiveObjects: 0.063083 ms CreateObjectMapping: 0.015334 ms MarkObjects: 2.133459 ms  DeleteObjects: 0.037916 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x17dde7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.160 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.269 seconds
+Domain Reload Profiling: 429ms
+	BeginReloadAssembly (77ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (48ms)
+		LoadAssemblies (67ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (4ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (269ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (159ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (17ms)
+			ProcessInitializeOnLoadAttributes (126ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1520 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (28.1 KB). Loaded Objects now: 2010.
+Memory consumption went from 113.1 MB to 113.1 MB.
+Total: 2.131291 ms (FindLiveObjects: 0.064459 ms CreateObjectMapping: 0.019833 ms MarkObjects: 2.017375 ms  DeleteObjects: 0.029167 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x17dde7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.216 seconds
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.386 seconds
+Domain Reload Profiling: 602ms
+	BeginReloadAssembly (124ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (57ms)
+		LoadAssemblies (76ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (4ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (387ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (166ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (18ms)
+			ProcessInitializeOnLoadAttributes (131ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1520 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (27.9 KB). Loaded Objects now: 2013.
+Memory consumption went from 119.9 MB to 119.8 MB.
+Total: 2.159959 ms (FindLiveObjects: 0.062875 ms CreateObjectMapping: 0.016000 ms MarkObjects: 2.038417 ms  DeleteObjects: 0.042208 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x17dde7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.160 seconds
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.277 seconds
+Domain Reload Profiling: 437ms
+	BeginReloadAssembly (78ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (46ms)
+		LoadAssemblies (64ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (5ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (278ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (167ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (17ms)
+			ProcessInitializeOnLoadAttributes (134ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1520 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (28.0 KB). Loaded Objects now: 2016.
+Memory consumption went from 126.6 MB to 126.6 MB.
+Total: 2.112125 ms (FindLiveObjects: 0.069500 ms CreateObjectMapping: 0.016542 ms MarkObjects: 1.996292 ms  DeleteObjects: 0.029458 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x17dde7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.223 seconds
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.387 seconds
+Domain Reload Profiling: 610ms
+	BeginReloadAssembly (124ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (64ms)
+		LoadAssemblies (83ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (4ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (388ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (167ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (18ms)
+			ProcessInitializeOnLoadAttributes (133ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1520 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (28.2 KB). Loaded Objects now: 2019.
+Memory consumption went from 133.3 MB to 133.3 MB.
+Total: 1.950708 ms (FindLiveObjects: 0.062917 ms CreateObjectMapping: 0.016625 ms MarkObjects: 1.842708 ms  DeleteObjects: 0.027958 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x17dde7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.241 seconds
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.370 seconds
+Domain Reload Profiling: 611ms
+	BeginReloadAssembly (131ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (74ms)
+		LoadAssemblies (90ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (370ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (153ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (17ms)
+			ProcessInitializeOnLoadAttributes (122ms)
+			ProcessInitializeOnLoadMethodAttributes (10ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1520 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (28.1 KB). Loaded Objects now: 2022.
+Memory consumption went from 140.1 MB to 140.0 MB.
+Total: 1.918250 ms (FindLiveObjects: 0.059625 ms CreateObjectMapping: 0.016375 ms MarkObjects: 1.814166 ms  DeleteObjects: 0.027792 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x17dde7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.165 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.272 seconds
+Domain Reload Profiling: 437ms
+	BeginReloadAssembly (82ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (48ms)
+		LoadAssemblies (69ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (5ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (272ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (161ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (17ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1520 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (28.1 KB). Loaded Objects now: 2025.
+Memory consumption went from 146.8 MB to 146.8 MB.
+Total: 2.147333 ms (FindLiveObjects: 0.066458 ms CreateObjectMapping: 0.018792 ms MarkObjects: 2.031041 ms  DeleteObjects: 0.030667 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x17dde7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.251 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.366 seconds
+Domain Reload Profiling: 617ms
+	BeginReloadAssembly (144ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (69ms)
+		LoadAssemblies (87ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (366ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (152ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (16ms)
+			ProcessInitializeOnLoadAttributes (121ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1520 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (28.1 KB). Loaded Objects now: 2028.
+Memory consumption went from 153.5 MB to 153.5 MB.
+Total: 1.891084 ms (FindLiveObjects: 0.057625 ms CreateObjectMapping: 0.015709 ms MarkObjects: 1.789250 ms  DeleteObjects: 0.028250 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
