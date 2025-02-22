@@ -14,21 +14,9 @@ public class TileData : ScriptableObject
     // Monitor attributes (blank by default)
     public bool isMonitor; 
     public bool isRow;
-    public int rowIndex;
-    public int columnIndex;
+    public int index;
     public int currentSum;
     
     public bool isWrong = false;
 
-    private void Update()
-    {
-        // TODO check sum against original data 
-        
-        // TODO change sprite if condition met
-        if (isWrong)
-        {
-            Sprite sprite = Resources.Load<Sprite>("Sprites/WrongTile");
-        }
-        
-    }
 }

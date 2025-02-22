@@ -15,6 +15,7 @@ MonoBehaviour:
   tiles:
   - {fileID: 11400000, guid: f65810fb2e13d4d62a2c7651eab75016, type: 2}
   value: 7
+  isNonInteractive: 1
   isMonitor: 0
   isRow: 0
   rowIndex: 0

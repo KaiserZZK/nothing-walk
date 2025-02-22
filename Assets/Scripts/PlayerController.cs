@@ -35,20 +35,45 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(
+            transform.position, 
+            movePoint.position, moveSpeed * Time.deltaTime
+        );
 
         if (Vector3.Distance(transform.position, movePoint.position) <= 0.05f)
         {
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, whatStopsMovement))
+                if (
+                    !Physics2D.OverlapCircle(
+                        movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 
+                        .2f, 
+                        whatStopsMovement
+                    )
+                    &&
+                    !mapManager.DoesTileBlockMovement(
+                        movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), 
+                        currentValue
+                    )
+                )
                 {
                     movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                 }
                 UpdateValueAndSprite(movePoint.position);
             } else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, whatStopsMovement))
+                if (
+                    !Physics2D.OverlapCircle(
+                        movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), 
+                        .2f, 
+                        whatStopsMovement
+                    )
+                    && 
+                    !mapManager.DoesTileBlockMovement(
+                        movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), 
+                        currentValue
+                    )
+                )
                 {
                     movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                 }
@@ -66,14 +91,9 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateValueAndSprite(Vector2 position)
     {
-        // TODO update current value 
-        
         int tileValue = mapManager.GetTileValue(position);
 
-        if (tileValue % 7 == 0)
-        {
-            return;
-        }
+        if (tileValue % 7 == 0 || tileValue == -1) return;
 
         currentValue += tileValue;
         currentValue %= 7;
@@ -84,6 +104,7 @@ public class PlayerController : MonoBehaviour
         if (currentValue == 0)
         {
             mapManager.ReplaceTileWithSeven(position);
+            // TODO update in UI panel on number of 7s created 
         }
         else
         {
