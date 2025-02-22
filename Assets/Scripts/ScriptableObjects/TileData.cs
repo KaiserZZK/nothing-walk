@@ -9,7 +9,6 @@ public class TileData : ScriptableObject
     public TileBase[] tiles;
 
     public int value;
-    public bool isNonInteractive;
 
     // Monitor attributes (blank by default)
     public bool isMonitor;

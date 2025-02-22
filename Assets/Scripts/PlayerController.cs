@@ -54,9 +54,10 @@ public class PlayerController : MonoBehaviour
                     )
                 )
                 {
+                    Vector3 previousPosition = movePoint.position;
                     movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                    UpdateValueAndSprite(movePoint.position, previousPosition);
                 }
-                UpdateValueAndSprite(movePoint.position);
             } else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
                 if (
@@ -72,9 +73,10 @@ public class PlayerController : MonoBehaviour
                     )
                 )
                 {
+                    Vector3 previousPosition = movePoint.position;
                     movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                    UpdateValueAndSprite(movePoint.position, previousPosition);
                 }
-                UpdateValueAndSprite(movePoint.position);
             }
             
             anim.SetBool("moving", false);
@@ -86,11 +88,26 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    private void UpdateValueAndSprite(Vector2 position)
+    private void UpdateValueAndSprite(Vector2 newPosition, Vector2 previousPosition)
     {
-        int tileValue = mapManager.GetTileValue(position);
+        int tileValue = mapManager.GetTileValue(newPosition);
+        int previousValue = currentValue;
 
-        if (tileValue % 7 == 0 || tileValue == -1) return;
+        if (tileValue == -1)
+        {
+            // TODO
+        }
+        else if (tileValue == 7)
+        {
+            return;
+        }
+        else if (tileValue == 0)
+        {
+            mapManager.UpdateWithoutTileChanges(newPosition, previousPosition, previousValue, currentValue);
+            return;
+        }
+            
+        
 
         currentValue += tileValue;
         currentValue %= 7;
@@ -100,12 +117,12 @@ public class PlayerController : MonoBehaviour
 
         if (currentValue == 0)
         {
-            mapManager.ReplaceTileWithSeven(position);
+            mapManager.ReplaceTileWithSeven(newPosition, previousPosition, previousValue, currentValue);
             // TODO update in UI panel on number of 7s created 
         }
         else
         {
-            mapManager.RemoveTile(position);
+            mapManager.RemoveTile(newPosition, previousPosition, previousValue, currentValue);
         }
     }
 }
