@@ -69,7 +69,12 @@ public class PlayerController : MonoBehaviour
         // TODO update current value 
         
         int tileValue = mapManager.GetTileValue(position);
-        // print(tileValue);
+
+        if (tileValue % 7 == 0)
+        {
+            return;
+        }
+
         currentValue += tileValue;
         currentValue %= 7;
 
@@ -78,7 +83,11 @@ public class PlayerController : MonoBehaviour
 
         if (currentValue == 0)
         {
-            // TODO spawn a 7 brick
+            mapManager.ReplaceTileWithSeven(position);
+        }
+        else
+        {
+            mapManager.RemoveTile(position);
         }
     }
 }

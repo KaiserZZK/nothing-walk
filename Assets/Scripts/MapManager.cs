@@ -67,10 +67,25 @@ public class MapManager : MonoBehaviour
         if (clickedTile != null)
         {
             TileData tileData = dataFromTiles[clickedTile];
-            return tileData.value;
+            if (!tileData.isNonInteractive)
+            {
+                return tileData.value;
+            }
             
         }
         
         return 0;
+    }
+    
+    public void RemoveTile(Vector2 worldPosition)
+    {
+        Vector3Int gridPosition = map.WorldToCell(worldPosition);
+        map.SetTile(gridPosition, null); 
+    }
+    
+    public void ReplaceTileWithSeven(Vector2 worldPosition)
+    {
+        Vector3Int gridPosition = map.WorldToCell(worldPosition);
+        map.SetTile(gridPosition, tileDataList[6].tiles[0]); 
     }
 }
