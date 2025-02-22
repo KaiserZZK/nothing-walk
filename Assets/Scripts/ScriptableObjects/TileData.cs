@@ -12,11 +12,7 @@ public class TileData : ScriptableObject
     public bool isNonInteractive;
 
     // Monitor attributes (blank by default)
-    public bool isMonitor; 
-    public bool isRow;
-    public int index;
-    public int currentSum;
-    
+    public bool isMonitor;
     public bool isWrong = false;
 
 }
