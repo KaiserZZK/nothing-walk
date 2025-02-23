@@ -360,6 +360,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Animator
 
+	//Start Registrations for type : UnityEngine.AsyncOperation
+
+		//System.Void UnityEngine.AsyncOperation::InternalDestroy(System.IntPtr)
+		void Register_UnityEngine_AsyncOperation_InternalDestroy();
+		Register_UnityEngine_AsyncOperation_InternalDestroy();
+
+	//End Registrations for type : UnityEngine.AsyncOperation
+
 	//Start Registrations for type : UnityEngine.Camera
 
 		//System.Int32 UnityEngine.Camera::GetAllCamerasCount()
@@ -394,9 +402,17 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_ScreenPointToRay_Injected();
 		Register_UnityEngine_Camera_ScreenPointToRay_Injected();
 
+		//System.Void UnityEngine.Camera::ScreenToWorldPoint_Injected(UnityEngine.Vector3&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Vector3&)
+		void Register_UnityEngine_Camera_ScreenToWorldPoint_Injected();
+		Register_UnityEngine_Camera_ScreenToWorldPoint_Injected();
+
 		//System.Void UnityEngine.Camera::get_pixelRect_Injected(UnityEngine.Rect&)
 		void Register_UnityEngine_Camera_get_pixelRect_Injected();
 		Register_UnityEngine_Camera_get_pixelRect_Injected();
+
+		//UnityEngine.Camera UnityEngine.Camera::get_main()
+		void Register_UnityEngine_Camera_get_main();
+		Register_UnityEngine_Camera_get_main();
 
 		//UnityEngine.CameraClearFlags UnityEngine.Camera::get_clearFlags()
 		void Register_UnityEngine_Camera_get_clearFlags();
@@ -421,6 +437,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.CameraRaycastHelper
 
 	//Start Registrations for type : UnityEngine.Component
+
+		//UnityEngine.GameObject UnityEngine.Component::get_gameObject()
+		void Register_UnityEngine_Component_get_gameObject();
+		Register_UnityEngine_Component_get_gameObject();
 
 		//UnityEngine.Transform UnityEngine.Component::get_transform()
 		void Register_UnityEngine_Component_get_transform();
@@ -618,6 +638,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_SendMessage();
 		Register_UnityEngine_GameObject_SendMessage();
 
+		//UnityEngine.Component UnityEngine.GameObject::GetComponent(System.Type)
+		void Register_UnityEngine_GameObject_GetComponent();
+		Register_UnityEngine_GameObject_GetComponent();
+
 	//End Registrations for type : UnityEngine.GameObject
 
 	//Start Registrations for type : UnityEngine.Gradient
@@ -635,6 +659,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Gradient_Cleanup();
 
 	//End Registrations for type : UnityEngine.Gradient
+
+	//Start Registrations for type : UnityEngine.GridLayout
+
+		//System.Void UnityEngine.GridLayout::WorldToCell_Injected(UnityEngine.Vector3&,UnityEngine.Vector3Int&)
+		void Register_UnityEngine_GridLayout_WorldToCell_Injected();
+		Register_UnityEngine_GridLayout_WorldToCell_Injected();
+
+	//End Registrations for type : UnityEngine.GridLayout
 
 	//Start Registrations for type : UnityEngine.GUI
 
@@ -994,6 +1026,14 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Object_ToString();
 		Register_UnityEngine_Object_ToString();
 
+		//System.Void UnityEngine.Object::Destroy(UnityEngine.Object,System.Single)
+		void Register_UnityEngine_Object_Destroy();
+		Register_UnityEngine_Object_Destroy();
+
+		//System.Void UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)
+		void Register_UnityEngine_Object_DontDestroyOnLoad();
+		Register_UnityEngine_Object_DontDestroyOnLoad();
+
 		//System.Void UnityEngine.Object::set_hideFlags(UnityEngine.HideFlags)
 		void Register_UnityEngine_Object_set_hideFlags();
 		Register_UnityEngine_Object_set_hideFlags();
@@ -1001,6 +1041,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Object UnityEngine.Object::ForceLoadFromInstanceID(System.Int32)
 		void Register_UnityEngine_Object_ForceLoadFromInstanceID();
 		Register_UnityEngine_Object_ForceLoadFromInstanceID();
+
+		//UnityEngine.Object[] UnityEngine.Object::FindObjectsOfType(System.Type,System.Boolean)
+		void Register_UnityEngine_Object_FindObjectsOfType();
+		Register_UnityEngine_Object_FindObjectsOfType();
 
 	//End Registrations for type : UnityEngine.Object
 
@@ -1268,6 +1312,38 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.RenderTexture
 
+	//Start Registrations for type : UnityEngine.SceneManagement.Scene
+
+		//System.Int32 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal(System.Int32)
+		void Register_UnityEngine_SceneManagement_Scene_GetBuildIndexInternal();
+		Register_UnityEngine_SceneManagement_Scene_GetBuildIndexInternal();
+
+	//End Registrations for type : UnityEngine.SceneManagement.Scene
+
+	//Start Registrations for type : UnityEngine.SceneManagement.SceneManager
+
+		//System.Int32 UnityEngine.SceneManagement.SceneManager::get_sceneCount()
+		void Register_UnityEngine_SceneManagement_SceneManager_get_sceneCount();
+		Register_UnityEngine_SceneManagement_SceneManager_get_sceneCount();
+
+		//System.Void UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected(UnityEngine.SceneManagement.Scene&)
+		void Register_UnityEngine_SceneManagement_SceneManager_GetActiveScene_Injected();
+		Register_UnityEngine_SceneManagement_SceneManager_GetActiveScene_Injected();
+
+		//System.Void UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected(System.Int32,UnityEngine.SceneManagement.Scene&)
+		void Register_UnityEngine_SceneManagement_SceneManager_GetSceneAt_Injected();
+		Register_UnityEngine_SceneManagement_SceneManager_GetSceneAt_Injected();
+
+	//End Registrations for type : UnityEngine.SceneManagement.SceneManager
+
+	//Start Registrations for type : UnityEngine.SceneManagement.SceneManagerAPIInternal
+
+		//UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected(System.String,System.Int32,UnityEngine.SceneManagement.LoadSceneParameters&,System.Boolean)
+		void Register_UnityEngine_SceneManagement_SceneManagerAPIInternal_LoadSceneAsyncNameIndexInternal_Injected();
+		Register_UnityEngine_SceneManagement_SceneManagerAPIInternal_LoadSceneAsyncNameIndexInternal_Injected();
+
+	//End Registrations for type : UnityEngine.SceneManagement.SceneManagerAPIInternal
+
 	//Start Registrations for type : UnityEngine.Screen
 
 		//System.Int32 UnityEngine.Screen::get_height()
@@ -1303,6 +1379,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Shader_TagToID();
 
 	//End Registrations for type : UnityEngine.Shader
+
+	//Start Registrations for type : UnityEngine.SpriteRenderer
+
+		//System.Void UnityEngine.SpriteRenderer::set_sprite(UnityEngine.Sprite)
+		void Register_UnityEngine_SpriteRenderer_set_sprite();
+		Register_UnityEngine_SpriteRenderer_set_sprite();
+
+	//End Registrations for type : UnityEngine.SpriteRenderer
 
 	//Start Registrations for type : UnityEngine.SubsystemDescriptorBindings
 
@@ -1430,6 +1514,14 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Tilemaps_Tilemap_RefreshTilesNative();
 		Register_UnityEngine_Tilemaps_Tilemap_RefreshTilesNative();
 
+		//System.Void UnityEngine.Tilemaps.Tilemap::SetTileAsset_Injected(UnityEngine.Vector3Int&,UnityEngine.Object)
+		void Register_UnityEngine_Tilemaps_Tilemap_SetTileAsset_Injected();
+		Register_UnityEngine_Tilemaps_Tilemap_SetTileAsset_Injected();
+
+		//UnityEngine.Object UnityEngine.Tilemaps.Tilemap::GetTileAsset_Injected(UnityEngine.Vector3Int&)
+		void Register_UnityEngine_Tilemaps_Tilemap_GetTileAsset_Injected();
+		Register_UnityEngine_Tilemaps_Tilemap_GetTileAsset_Injected();
+
 	//End Registrations for type : UnityEngine.Tilemaps.Tilemap
 
 	//Start Registrations for type : UnityEngine.Tilemaps.TilemapRenderer
@@ -1469,6 +1561,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::set_position_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_set_position_Injected();
 		Register_UnityEngine_Transform_set_position_Injected();
+
+		//UnityEngine.Transform UnityEngine.Transform::FindRelativeTransformWithPath(UnityEngine.Transform,System.String,System.Boolean)
+		void Register_UnityEngine_Transform_FindRelativeTransformWithPath();
+		Register_UnityEngine_Transform_FindRelativeTransformWithPath();
 
 		//UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 		void Register_UnityEngine_Transform_GetChild();

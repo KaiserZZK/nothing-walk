@@ -47,11 +47,17 @@ extern void Tilemap_HandleSyncTileCallback_mF1D8059E6F8ED90041313259D5DCFC3DBEB8
 extern void Tilemap_HandlePositionsChangedCallback_mCEC3B01A5328F6C83163C25CE9EDCD87E5895CD0 (void);
 extern void Tilemap_SendTilemapTileChangedCallback_m66E5D12B134C48E57EF4C1B29658CD61B75366EF (void);
 extern void Tilemap_SendTilemapPositionsChangedCallback_m8F1D0E0F18A797349A83465F5E68DF01972D75D4 (void);
+extern void Tilemap_GetTileAsset_m3B9C96C2E2488141C4F6EBD52C6D807C801C6922 (void);
+extern void Tilemap_GetTile_m8500FBFF853C9E813810929BD29D7A866B516225 (void);
+extern void Tilemap_SetTileAsset_m88D70B08B3D291F99EB34F01136C2D4EEBE45D4B (void);
+extern void Tilemap_SetTile_m880BD0CC6B69A4B15495C4FBD2CBEA50D1BE23BA (void);
 extern void Tilemap_RefreshTile_mEF4F94212FD9B311431DFFAFE092A4A6EBA580DF (void);
 extern void Tilemap_RefreshTilesNative_mD73E77DFD7C808A3665CA8389F728CBC08A52232 (void);
 extern void Tilemap_GetSyncTileCallbackSettings_m1630BBFA37F85D2E29E73EA92DB13C700CC86B29 (void);
 extern void Tilemap_DoSyncTileCallback_m7BF07E7C678E7A55BDF116FA7C5BEF29963402A2 (void);
 extern void Tilemap_DoPositionsChangedCallback_mCD3C79A37783BB7DD22454981E0B51394B7990F4 (void);
+extern void Tilemap_GetTileAsset_Injected_m541A1F618DB6621D2ADCD4247D5127DEDDFA3B30 (void);
+extern void Tilemap_SetTileAsset_Injected_m45031F05D325CDEA542B7B64AAD9893B2FFDA3CA (void);
 extern void Tilemap_RefreshTile_Injected_m99F1EC3F340590E282B01EC7C96F1F8D1BA03A69 (void);
 extern void TilemapRenderer_RegisterSpriteAtlasRegistered_m5D7676A05B0B16ABCCF4CEE57BA9E28FA4D171BC (void);
 extern void TilemapRenderer_UnregisterSpriteAtlasRegistered_mFE33C972CF738A50A631203D0DD7E325AADFCB08 (void);
@@ -64,7 +70,7 @@ extern void TileData_set_flags_mEB46B1364D6DB7F77C2E1E43AFD31381B291BD30 (void);
 extern void TileData_set_colliderType_mE12359ADEF5F42CC0B635DCBAEC3035F0526FA96 (void);
 extern void TileData_CreateDefault_m13A39001A47B60635B10FFD06AD65082CBB7D12D (void);
 extern void TileData__cctor_mE2F5A802075C68DE978E46092DC8BF465182934A (void);
-static Il2CppMethodPointer s_methodPointers[52] = 
+static Il2CppMethodPointer s_methodPointers[58] = 
 {
 	ITilemap__ctor_m3281F6903F18F9B867E6B81E18BCCD0828084258,
 	ITilemap_RefreshTile_m4C4B0A062A13E986BD20AA87F056982D67FAF69D,
@@ -101,11 +107,17 @@ static Il2CppMethodPointer s_methodPointers[52] =
 	Tilemap_HandlePositionsChangedCallback_mCEC3B01A5328F6C83163C25CE9EDCD87E5895CD0,
 	Tilemap_SendTilemapTileChangedCallback_m66E5D12B134C48E57EF4C1B29658CD61B75366EF,
 	Tilemap_SendTilemapPositionsChangedCallback_m8F1D0E0F18A797349A83465F5E68DF01972D75D4,
+	Tilemap_GetTileAsset_m3B9C96C2E2488141C4F6EBD52C6D807C801C6922,
+	Tilemap_GetTile_m8500FBFF853C9E813810929BD29D7A866B516225,
+	Tilemap_SetTileAsset_m88D70B08B3D291F99EB34F01136C2D4EEBE45D4B,
+	Tilemap_SetTile_m880BD0CC6B69A4B15495C4FBD2CBEA50D1BE23BA,
 	Tilemap_RefreshTile_mEF4F94212FD9B311431DFFAFE092A4A6EBA580DF,
 	Tilemap_RefreshTilesNative_mD73E77DFD7C808A3665CA8389F728CBC08A52232,
 	Tilemap_GetSyncTileCallbackSettings_m1630BBFA37F85D2E29E73EA92DB13C700CC86B29,
 	Tilemap_DoSyncTileCallback_m7BF07E7C678E7A55BDF116FA7C5BEF29963402A2,
 	Tilemap_DoPositionsChangedCallback_mCD3C79A37783BB7DD22454981E0B51394B7990F4,
+	Tilemap_GetTileAsset_Injected_m541A1F618DB6621D2ADCD4247D5127DEDDFA3B30,
+	Tilemap_SetTileAsset_Injected_m45031F05D325CDEA542B7B64AAD9893B2FFDA3CA,
 	Tilemap_RefreshTile_Injected_m99F1EC3F340590E282B01EC7C96F1F8D1BA03A69,
 	TilemapRenderer_RegisterSpriteAtlasRegistered_m5D7676A05B0B16ABCCF4CEE57BA9E28FA4D171BC,
 	TilemapRenderer_UnregisterSpriteAtlasRegistered_mFE33C972CF738A50A631203D0DD7E325AADFCB08,
@@ -127,73 +139,79 @@ extern void TileData_set_flags_mEB46B1364D6DB7F77C2E1E43AFD31381B291BD30_Adjusto
 extern void TileData_set_colliderType_mE12359ADEF5F42CC0B635DCBAEC3035F0526FA96_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[6] = 
 {
-	{ 0x0600002D, TileData_set_sprite_m3566544847F9C9C27EDB154324B6FBDB446EFE94_AdjustorThunk },
-	{ 0x0600002E, TileData_set_color_m5E759823878243A226EF46419FAD7C0CC3D5F40A_AdjustorThunk },
-	{ 0x0600002F, TileData_set_transform_m71074A780C066292F940002A7165658E9CC01F9F_AdjustorThunk },
-	{ 0x06000030, TileData_set_gameObject_m1CE5B2AAAB5BF5AEF36EBAF2BCE23E4D2E5A9E09_AdjustorThunk },
-	{ 0x06000031, TileData_set_flags_mEB46B1364D6DB7F77C2E1E43AFD31381B291BD30_AdjustorThunk },
-	{ 0x06000032, TileData_set_colliderType_mE12359ADEF5F42CC0B635DCBAEC3035F0526FA96_AdjustorThunk },
+	{ 0x06000033, TileData_set_sprite_m3566544847F9C9C27EDB154324B6FBDB446EFE94_AdjustorThunk },
+	{ 0x06000034, TileData_set_color_m5E759823878243A226EF46419FAD7C0CC3D5F40A_AdjustorThunk },
+	{ 0x06000035, TileData_set_transform_m71074A780C066292F940002A7165658E9CC01F9F_AdjustorThunk },
+	{ 0x06000036, TileData_set_gameObject_m1CE5B2AAAB5BF5AEF36EBAF2BCE23E4D2E5A9E09_AdjustorThunk },
+	{ 0x06000037, TileData_set_flags_mEB46B1364D6DB7F77C2E1E43AFD31381B291BD30_AdjustorThunk },
+	{ 0x06000038, TileData_set_colliderType_mE12359ADEF5F42CC0B635DCBAEC3035F0526FA96_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[52] = 
+static const int32_t s_InvokerIndices[58] = 
 {
+	1377,
+	1169,
+	2570,
+	1591,
+	1591,
 	1345,
-	1143,
-	2528,
-	1558,
-	1558,
-	1313,
-	1115,
-	1287,
-	1085,
-	1310,
-	1112,
-	1313,
-	1115,
-	1302,
-	1104,
-	1302,
-	1104,
-	407,
+	1141,
+	1319,
+	1111,
+	1342,
+	1138,
 	1345,
-	685,
-	407,
-	539,
-	294,
-	538,
-	260,
-	295,
-	261,
-	1345,
-	1285,
-	2515,
-	2515,
-	1115,
-	600,
-	1115,
-	1069,
-	1143,
-	558,
-	1080,
-	1115,
-	600,
-	1080,
-	1345,
-	1345,
-	1115,
-	1115,
-	1085,
-	1112,
-	1115,
-	1104,
-	1104,
-	2539,
-	2548,
+	1141,
+	1334,
+	1130,
+	1334,
+	1130,
+	413,
+	1377,
+	698,
+	413,
+	548,
+	300,
+	547,
+	265,
+	301,
+	266,
+	1377,
+	1317,
+	2557,
+	2557,
+	1141,
+	612,
+	1141,
+	1095,
+	1042,
+	1042,
+	698,
+	698,
+	1169,
+	568,
+	1106,
+	1141,
+	612,
+	1032,
+	569,
+	1106,
+	1377,
+	1377,
+	1141,
+	1141,
+	1111,
+	1138,
+	1141,
+	1130,
+	1130,
+	2582,
+	2591,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_TilemapModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_TilemapModule_CodeGenModule = 
 {
 	"UnityEngine.TilemapModule.dll",
-	52,
+	58,
 	s_methodPointers,
 	6,
 	s_adjustorThunks,

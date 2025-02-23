@@ -284,7 +284,13 @@
 -r:"Library/Bee/artifacts/2000b0aP.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/MapManager.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/SceneController.cs"
+"Assets/Scripts/ScriptableObjects/Button.cs"
+"Assets/Scripts/ScriptableObjects/TileData.cs"
+"Assets/Scripts/StatusUIController.cs"
+"Assets/Scripts/StatusUIManager.cs"
 -langversion:9.0
 
 /deterministic
