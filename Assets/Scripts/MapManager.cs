@@ -15,7 +15,6 @@ public class MapManager : MonoBehaviour
     private Dictionary<TileBase, TileData> dataFromTiles;
     private Dictionary<int, int> rowSums, colSums;
     private Dictionary<int, int> originalRowSums, originalColSums; 
-    private List<TileData> monitorTiles = new List<TileData>(); 
 
     private void Start()
     {
@@ -32,7 +31,6 @@ public class MapManager : MonoBehaviour
             {
                 dataFromTiles.Add(tile, tileData);
             }
-            if (tileData.isMonitor) monitorTiles.Add(tileData);
         }
         
         BuildRowColSums();
@@ -41,7 +39,6 @@ public class MapManager : MonoBehaviour
     
     private void BuildRowColSums()
     {
-        int brickCOUnt = 0;
         for (int x = -7; x < 1; x++)
         {
             for (int y = -4; y < 5; y++)
@@ -53,61 +50,31 @@ public class MapManager : MonoBehaviour
 
                 if (tile != null && dataFromTiles.TryGetValue(tile, out TileData tileData))
                 {
-                    if (tileData.value == -1)
-                    {
-                        Debug.Log($"{y}, {x}, {tileData.value}");
-                        
-                    }
+                    // if (tileData.value == -1)
+                    // {
+                    //     Debug.Log($"{y}, {x}, {tileData.value}");
+                    //     
+                    // }
                     rowSums[y] += tileData.value;
                     colSums[x] += tileData.value;
                     rowSums[y] %= 7;
                     colSums[x] %= 7;
-                    brickCOUnt++; 
                 }
             }
         }
         
-        Debug.Log($"a total of {brickCOUnt}");
-
         // Save original sums for later comparisons
         originalRowSums = new Dictionary<int, int>(rowSums);
         originalColSums = new Dictionary<int, int>(colSums);
         // Properly print row and column sums
-        Debug.Log($"Row sum initialized: {DictionaryToString(rowSums)}");
-        Debug.Log($"Col sum initialized: {DictionaryToString(colSums)}");
+        // Debug.Log($"Row sum initialized: {DictionaryToString(rowSums)}");
+        // Debug.Log($"Col sum initialized: {DictionaryToString(colSums)}");
     }
     
     private string DictionaryToString(Dictionary<int, int> dict)
     {
         return string.Join(", ", dict.Select(kv => $"[{kv.Key}: {kv.Value}]"));
     }
-    
-    // public void UpdateSums(Vector2 position, int oldValue, int newValue, int playerValue)
-    // {
-    //     Vector3Int gridPosition = map.WorldToCell(position);
-    //     int row = gridPosition.y;
-    //     int col = gridPosition.x;
-    //     
-    //     // Debug.Log($"pre-update Row {row}: {rowSums[row]}, Col {col}: {colSums[col]}");
-    //     
-    //     rowSums[row] += newValue - oldValue;
-    //     colSums[col] += newValue - oldValue;
-    //
-    //     if (rowSums[row] != originalRowSums[row])
-    //     {
-    //         Debug.Log($"Row {row}: {rowSums[row]} originally {originalRowSums[row]}");
-    //     }
-    //
-    //     if (colSums[col] != originalColSums[col])
-    //     {
-    //         Debug.Log($"Col {row}: {colSums[col]} originally {originalColSums[col]}");
-    //     }
-    //     
-    //     // Debug.Log($"post-update Row {row}: {rowSums[row]}, Col {col}: {colSums[col]}");
-    //     
-    //     // // Check if monitor tiles need to be updated
-    //     // UpdateMonitorTiles();
-    // }
     
     public void UpdateSums(
         Vector3Int currentGridPosition, 
@@ -142,13 +109,31 @@ public class MapManager : MonoBehaviour
             colSums[currentCol] += (currentPlayerValue - currentTileValue);
             colSums[currentCol] %= 7;
             
-            if (colSums.ContainsKey(currentCol) && colSums[currentCol] != originalColSums[currentCol])
+            if (colSums.ContainsKey(currentCol))
             {
-                Debug.Log($"Col {currentCol} updated: {colSums[currentCol]} (original: {originalColSums[currentCol]})");
+                if (colSums[currentCol] != originalColSums[currentCol])
+                {
+                    Debug.Log($"Col {currentCol} updated: {colSums[currentCol]} (original: {originalColSums[currentCol]})");
+                    AlterMonitorState(currentCol, true, true);
+                }
+                else
+                {
+                    AlterMonitorState(currentCol, true, false);
+                }
             }
-            if (colSums.ContainsKey(prevCol) && colSums[prevCol] != originalColSums[prevCol])
+            
+            if (colSums.ContainsKey(prevCol))
             {
-                Debug.Log($"Col {prevCol} updated: {colSums[prevCol]} (original: {originalColSums[prevCol]})");
+                if (colSums[prevCol] != originalColSums[prevCol])
+                {
+                    Debug.Log($"Col {prevCol} updated: {colSums[prevCol]} (original: {originalColSums[prevCol]})");
+                    AlterMonitorState(prevCol, true, true);
+                }
+                else
+                {
+                    AlterMonitorState(prevCol, true, false);
+                }
+                
             }
         }
 
@@ -165,50 +150,67 @@ public class MapManager : MonoBehaviour
             rowSums[currentRow] += (currentPlayerValue - currentTileValue);
             rowSums[currentRow] %= 7;
             
-            if (rowSums.ContainsKey(currentRow) && rowSums[currentRow] != originalRowSums[currentRow])
+            if (rowSums.ContainsKey(currentRow))
             {
-                Debug.Log($"Row {currentRow} updated: {rowSums[currentRow]} (original: {originalRowSums[currentRow]})");
+                if (rowSums[currentRow] != originalRowSums[currentRow])
+                {
+                    Debug.Log($"Row {currentRow} updated: {rowSums[currentRow]} (original: {originalRowSums[currentRow]})");
+                    AlterMonitorState(currentRow, false, true);
+                }
+                else
+                {
+                    AlterMonitorState(currentRow, false, false);
+                }
             }
-            if (rowSums.ContainsKey(prevRow) && rowSums[prevRow] != originalRowSums[prevRow])
+
+            if (rowSums.ContainsKey(prevRow))
             {
-                Debug.Log($"Row {prevRow} updated: {rowSums[prevRow]} (original: {originalRowSums[prevRow]})");
+                if (rowSums[prevRow] != originalRowSums[prevRow])
+                {
+                    Debug.Log($"Row {prevRow} updated: {rowSums[prevRow]} (original: {originalRowSums[prevRow]})");
+                    AlterMonitorState(prevRow, false, true);
+                } else
+                {
+                    AlterMonitorState(prevRow, false, false);
+                }
             }
         }
+    }
 
-        // Check if monitor tiles need to be updated
-        UpdateMonitorTiles();
-    }
-    
-    private void UpdateMonitorTiles()
+    private void AlterMonitorState(
+        int currentIndex,
+        bool isCol,
+        bool isWrong
+    )
     {
-        // foreach (var monitor in monitorTiles)
-        // {
-        //     int currentSum = monitor.isRow ? rowSums.GetValueOrDefault(monitor.index, 0)
-        //         : colSums.GetValueOrDefault(monitor.index, 0);
-        //     int originalSum = monitor.isRow ? originalRowSums.GetValueOrDefault(monitor.index, 0)
-        //         : originalColSums.GetValueOrDefault(monitor.index, 0);
-        //
-        //     monitor.isWrong = (currentSum != originalSum);
-        // }
-        //
-        // // Update sprite appearances
-        // UpdateTileSprites();
-    }
-    
-    private void UpdateTileSprites()
-    {
-        foreach (var tileData in monitorTiles)
+        Vector3Int currentMonitorGridPosition;
+        TileBase newMonitorTile;
+
+        if (isCol)
         {
-            // TODO figure out this part
-            // could use an approach similar to  ReplaceTileWithSeven
-            // if (tileData.isWrong)
-            // {
-            //     tileData.SetSprite("Sprites/WrongTile");
-            // }
-            // else
-            // {
-            //     tileData.SetSprite("Sprites/CorrectTile"); // Assuming a correct sprite exists
-            // }
+            currentMonitorGridPosition = new Vector3Int(currentIndex, -5, 0);
+        }
+        else
+        {
+            currentMonitorGridPosition = new Vector3Int(1, currentIndex, 0);
+        }
+
+        if (isWrong)
+        {
+            newMonitorTile = tileDataList[8].tiles[0];
+        }
+        else
+        {
+            newMonitorTile = tileDataList[7].tiles[0];
+        }
+        
+        TileBase monitorTile = map.GetTile(currentMonitorGridPosition);
+        if (monitorTile != null)
+        {
+            TileData monitorTileData = dataFromTiles[monitorTile];
+            Debug.Log($"Modifying {currentMonitorGridPosition}, {isCol}, previouly {monitorTileData.isWrong} to {isWrong}");
+            // monitorTileData.isWrong = isWrong;
+            map.SetTile(currentMonitorGridPosition, newMonitorTile);
         }
     }
     
@@ -291,16 +293,7 @@ public class MapManager : MonoBehaviour
         {
             if (tileData.isMonitor)
             {
-                // Debug.Log($"Monitor hit at {gridPosition}, isWrong: {tileData.isWrong}, playerValue: {playerValue}");
-                if (gridPosition.x == 1)
-                {
-                    // Debug.Log($"This is a row monitor with row index {gridPosition.y}");
-                } 
-                else if (gridPosition.y == -5)
-                {
-                    // Debug.Log($"This is a col monitor with col index {gridPosition.x}");
-                }
-                
+                Debug.Log($"I should work!, {tileData.isWrong}, player value: {playerValue}");
                 return (!tileData.isWrong) | (playerValue != 0);
             }
         }

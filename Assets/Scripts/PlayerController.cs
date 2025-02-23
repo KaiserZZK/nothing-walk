@@ -95,7 +95,9 @@ public class PlayerController : MonoBehaviour
 
         if (tileValue == -1)
         {
-            // TODO
+            // TODO implement level advancement
+            Debug.Log("Yippee!");
+            return;
         }
         else if (tileValue == 7)
         {

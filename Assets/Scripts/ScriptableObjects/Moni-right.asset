@@ -15,6 +15,5 @@ MonoBehaviour:
   tiles:
   - {fileID: 11400000, guid: 24c175c36688f49ecb24a0a55af2dc8a, type: 2}
   value: -1
-  isNonInteractive: 0
   isMonitor: 1
   isWrong: 0
