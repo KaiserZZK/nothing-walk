@@ -95,8 +95,8 @@ public class PlayerController : MonoBehaviour
 
         if (tileValue == -1)
         {
-            // TODO implement level advancement
-            Debug.Log("Yippee!");
+            // Debug.Log("Yippee!");
+            SceneController.sceneInstance.GoNextLevel();
             return;
         }
         else if (tileValue == 7)
@@ -120,7 +120,6 @@ public class PlayerController : MonoBehaviour
         if (currentValue == 0)
         {
             mapManager.ReplaceTileWithSeven(newPosition, previousPosition, previousValue, currentValue);
-            // TODO update in UI panel on number of 7s created 
         }
         else
         {

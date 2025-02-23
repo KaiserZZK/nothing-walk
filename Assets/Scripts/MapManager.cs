@@ -292,6 +292,11 @@ public class MapManager : MonoBehaviour
     
     public bool DoesTileBlockMovement(Vector2 worldPosition, int playerValue)
     {
+        if (playerValue == 6969724)
+        {
+            // special switch for start screen
+            return false;
+        }
         Vector3Int gridPosition = map.WorldToCell(worldPosition);
         TileBase tile = map.GetTile(gridPosition);
 

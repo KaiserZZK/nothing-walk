@@ -36,8 +36,7 @@ public class StatusUIManager : MonoBehaviour
                 Button tileData = dataFromTiles[clickedTile];
                 if (tileData.isHome)
                 {
-                    // TODO implement Home
-                    Debug.Log("Going back to home screen");
+                    SceneController.sceneInstance.LoadScene("0 Start");
                 } else if (tileData.isRestart)
                 {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

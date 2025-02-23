@@ -12,6 +12,8 @@ public class StatusUIController : MonoBehaviour
     private Sprite currentStatusSprite;
     [SerializeField] Sprite[] numberedSprites;
     [SerializeField] Sprite[] numberedStatusSprites;
+
+    [SerializeField] private bool updateStoppedDueToStartScreen = false;
     
     // Start is called before the first frame update
     void Start()
@@ -24,9 +26,13 @@ public class StatusUIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentSprite = numberedSprites[playerController.currentValue];
-        spriteRenderer.sprite = currentSprite;
-        currentStatusSprite = numberedStatusSprites[playerController.currentValue];
-        statusRenderer.sprite = currentStatusSprite;
+        if (!updateStoppedDueToStartScreen)
+        {
+            currentSprite = numberedSprites[playerController.currentValue];
+            spriteRenderer.sprite = currentSprite;
+            currentStatusSprite = numberedStatusSprites[playerController.currentValue];
+            statusRenderer.sprite = currentStatusSprite;
+            
+        }
     }
 }
