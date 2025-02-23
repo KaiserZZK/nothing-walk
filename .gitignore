@@ -1,3 +1,5 @@
 /UserSettings/*
 /builds/*
+.idea/*
+.vs/*
 .DS_Store
