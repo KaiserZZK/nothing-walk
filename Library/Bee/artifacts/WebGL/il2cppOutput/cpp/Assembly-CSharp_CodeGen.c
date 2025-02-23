@@ -32,8 +32,15 @@ extern void PlayerController_UpdateValueAndSprite_mA14A797C292C179190BF2C67909A4
 extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
 extern void SceneController_Awake_mA41B96C7E77C5FCEDFFA7546AACF8C177FED2ED9 (void);
 extern void SceneController_GoNextLevel_m15DD414DFEC322F4AAE2E385BE5280F4E2E3F3DB (void);
+extern void SceneController_LoadLevel_m29D84A121A34A14A7CC633FA1B326C2547CB60B5 (void);
 extern void SceneController_LoadScene_mB6F9D3C0559CC54B22C6FF6F667B17A520FE205E (void);
 extern void SceneController__ctor_m9716569B18874456A7670484C5001303A31B8907 (void);
+extern void U3CLoadLevelU3Ed__4__ctor_m58B99269A9B952D227CBEB159C7CDB21EC13D658 (void);
+extern void U3CLoadLevelU3Ed__4_System_IDisposable_Dispose_mD95A55D9BBA8F40C2D888CD9FAE4D652D2714291 (void);
+extern void U3CLoadLevelU3Ed__4_MoveNext_mCA8B72380E33DD39F148799E32C3EB690F9A51AA (void);
+extern void U3CLoadLevelU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3A7B3EB3B0DB063C65BC5D2BA9F9A41753CD4320 (void);
+extern void U3CLoadLevelU3Ed__4_System_Collections_IEnumerator_Reset_m4BA93BBC70774D4539A670F8CF0C20744E57EAF5 (void);
+extern void U3CLoadLevelU3Ed__4_System_Collections_IEnumerator_get_Current_m21AB0E6DE9B74FBEACEF96A1878A0F322CD06CC4 (void);
 extern void Button__ctor_m6CC103D3CBE7ABCDC685DCC02F320D62DCC05D16 (void);
 extern void TileData__ctor_m938F22AE3A8604B8FE0B90E03E77B1C7439DD80D (void);
 extern void StatusUIController_Start_m45EEE6791D3420A58A8E4B675FC18D2214021455 (void);
@@ -44,7 +51,7 @@ extern void StatusUIManager_Update_m39D33B9E53EDB7D6E3C3722F199EE5C0F8B05324 (vo
 extern void StatusUIManager__ctor_m7590117185E714D4E9BBDA2B0BB95E1721F1FC7C (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[32] = 
+static Il2CppMethodPointer s_methodPointers[39] = 
 {
 	MapManager_Start_mCDA9E95FE73A0F74ACECEEF9C1EE6AD538ED4DC5,
 	MapManager_BuildRowColSums_m36562BE73614E570587D008EF2B2AE028BD2DBF2,
@@ -66,8 +73,15 @@ static Il2CppMethodPointer s_methodPointers[32] =
 	PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33,
 	SceneController_Awake_mA41B96C7E77C5FCEDFFA7546AACF8C177FED2ED9,
 	SceneController_GoNextLevel_m15DD414DFEC322F4AAE2E385BE5280F4E2E3F3DB,
+	SceneController_LoadLevel_m29D84A121A34A14A7CC633FA1B326C2547CB60B5,
 	SceneController_LoadScene_mB6F9D3C0559CC54B22C6FF6F667B17A520FE205E,
 	SceneController__ctor_m9716569B18874456A7670484C5001303A31B8907,
+	U3CLoadLevelU3Ed__4__ctor_m58B99269A9B952D227CBEB159C7CDB21EC13D658,
+	U3CLoadLevelU3Ed__4_System_IDisposable_Dispose_mD95A55D9BBA8F40C2D888CD9FAE4D652D2714291,
+	U3CLoadLevelU3Ed__4_MoveNext_mCA8B72380E33DD39F148799E32C3EB690F9A51AA,
+	U3CLoadLevelU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3A7B3EB3B0DB063C65BC5D2BA9F9A41753CD4320,
+	U3CLoadLevelU3Ed__4_System_Collections_IEnumerator_Reset_m4BA93BBC70774D4539A670F8CF0C20744E57EAF5,
+	U3CLoadLevelU3Ed__4_System_Collections_IEnumerator_get_Current_m21AB0E6DE9B74FBEACEF96A1878A0F322CD06CC4,
 	Button__ctor_m6CC103D3CBE7ABCDC685DCC02F320D62DCC05D16,
 	TileData__ctor_m938F22AE3A8604B8FE0B90E03E77B1C7439DD80D,
 	StatusUIController_Start_m45EEE6791D3420A58A8E4B675FC18D2214021455,
@@ -79,46 +93,53 @@ static Il2CppMethodPointer s_methodPointers[32] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[32] = 
+static const int32_t s_InvokerIndices[39] = 
 {
-	1377,
-	1377,
-	1037,
-	145,
-	366,
-	997,
-	264,
-	264,
-	264,
-	469,
-	1377,
-	2591,
-	1377,
-	1026,
-	1377,
-	1377,
-	696,
-	1377,
-	1377,
-	1377,
-	1141,
-	1377,
-	1377,
-	1377,
-	1377,
-	1377,
-	1377,
-	1377,
-	1377,
-	1377,
-	2594,
-	1377,
+	4334,
+	4334,
+	3090,
+	349,
+	942,
+	2989,
+	712,
+	712,
+	712,
+	1219,
+	4334,
+	6389,
+	4334,
+	3075,
+	4334,
+	4334,
+	1966,
+	4334,
+	4334,
+	4334,
+	4245,
+	3503,
+	4334,
+	3478,
+	4334,
+	4172,
+	4245,
+	4334,
+	4245,
+	4334,
+	4334,
+	4334,
+	4334,
+	4334,
+	4334,
+	4334,
+	4334,
+	6393,
+	4334,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	32,
+	39,
 	s_methodPointers,
 	0,
 	NULL,

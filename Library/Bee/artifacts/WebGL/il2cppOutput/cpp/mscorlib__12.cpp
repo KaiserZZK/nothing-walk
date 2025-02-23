@@ -705,6 +705,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* ObjectWriter_Serialize_mAB0C5C3D4BA2257946B
 IL2CPP_EXTERN_C const RuntimeMethod* ObjectWriter_Write_mCC5B231F511D3F6EBCF5756099A8F72347270413_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReadOnlyCollection_1_get_Count_mFD62BF201E123EC70C86F4737734653458878566_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReadOnlyCollection_1_get_Item_mA899331426FFED30780A3AB856756B6C87458EA6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ResourceEnumerator_Reset_mC456556FAE9573FB2AF6B9235581C6F00F541EB7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ResourceEnumerator_get_Entry_m6F6A82FC2C1613E0BB01281D74D28839B8A26821_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ResourceEnumerator_get_Key_m7B093E62B874103DA7666F3ABFF4B84C5BA36A55_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ResourceEnumerator_get_Value_m929343E8F9F4B593F3FAB8F2968A557D70F7DDE3_RuntimeMethod_var;
@@ -4526,7 +4527,7 @@ IL_0011:
 		String_t* L_4 = ___1_simpleTypeName;
 		bool L_5 = ___2_ignoreCase;
 		Type_t* L_6;
-		L_6 = VirtualFuncInvoker3< Type_t*, String_t*, bool, bool >::Invoke(19, L_3, L_4, (bool)0, L_5);
+		L_6 = VirtualFuncInvoker3< Type_t*, String_t*, bool, bool >::Invoke(20, L_3, L_4, (bool)0, L_5);
 		return L_6;
 	}
 }
@@ -7684,7 +7685,7 @@ IL_0041:
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_10 = __this->___assemblyToIdTable;
 		String_t* L_11 = V_2;
 		bool L_12;
-		L_12 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(18, L_10, L_11);
+		L_12 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(19, L_10, L_11);
 		if (!L_12)
 		{
 			goto IL_0065;
@@ -7694,7 +7695,7 @@ IL_0041:
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_13 = __this->___assemblyToIdTable;
 		String_t* L_14 = V_2;
 		RuntimeObject* L_15;
-		L_15 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(20, L_13, L_14);
+		L_15 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21, L_13, L_14);
 		V_0 = ((*(int64_t*)((int64_t*)(int64_t*)UnBox(L_15, Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var))));
 		V_1 = (bool)0;
 		goto IL_008d;
@@ -7713,7 +7714,7 @@ IL_0065:
 		int64_t L_21 = V_0;
 		int64_t L_22 = L_21;
 		RuntimeObject* L_23 = Box(Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il2cpp_TypeInfo_var, &L_22);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(21, L_19, L_20, L_23);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(22, L_19, L_20, L_23);
 	}
 
 IL_008d:
@@ -24859,6 +24860,31 @@ IL_0052:
 		return L_12;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourceEnumerator_Reset_mC456556FAE9573FB2AF6B9235581C6F00F541EB7 (ResourceEnumerator_t6BAC4B31C7448C9868FB43C5899684520F2DB085* __this, const RuntimeMethod* method) 
+{
+	{
+		ResourceReader_t681F002277727FF2F8848B3F14C2ACD331171930* L_0 = __this->____reader;
+		Dictionary_2_t4AA150E5587EBF39D6592B59866FCF1AE7848123* L_1 = L_0->____resCache;
+		if (L_1)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		String_t* L_2;
+		L_2 = Environment_GetResourceString_mA14837A574D24E2F2D120D7B5514E849E9986058(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralBABE3225825740D4B38E1B426129BEB173526DB0)), NULL);
+		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_3 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_3, L_2, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ResourceEnumerator_Reset_mC456556FAE9573FB2AF6B9235581C6F00F541EB7_RuntimeMethod_var)));
+	}
+
+IL_001d:
+	{
+		__this->____currentIsValid = (bool)0;
+		__this->____currentName = (-1);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -24989,7 +25015,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ResourceSet_GetEnumeratorHelpe
 IL_001a:
 	{
 		RuntimeObject* L_4;
-		L_4 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(22, G_B2_0);
+		L_4 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(23, G_B2_0);
 		return L_4;
 	}
 }
@@ -25250,7 +25276,7 @@ IL_0028:
 	{
 		String_t* L_6 = ___0_name;
 		RuntimeObject* L_7;
-		L_7 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(20, G_B4_0, L_6);
+		L_7 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21, G_B4_0, L_6);
 		return L_7;
 	}
 }
@@ -25304,7 +25330,7 @@ IL_001b:
 		V_1 = L_7;
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_8 = V_0;
 		RuntimeObject* L_9;
-		L_9 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(22, L_8);
+		L_9 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(23, L_8);
 		V_2 = L_9;
 		goto IL_004b;
 	}
@@ -25342,7 +25368,7 @@ IL_005a:
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_18 = V_1;
 		String_t* L_19 = ___0_name;
 		RuntimeObject* L_20;
-		L_20 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(20, L_18, L_19);
+		L_20 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21, L_18, L_19);
 		return L_20;
 	}
 }
