@@ -47,7 +47,10 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/ScriptableObjects/TileData.cs" />
     <Compile Include="Assets/Scripts/MapManager.cs" />
+    <Compile Include="Assets/Scripts/StatusUIController.cs" />
     <Compile Include="Assets/Scripts/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/ScriptableObjects/Button.cs" />
+    <Compile Include="Assets/Scripts/StatusUIManager.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.19f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

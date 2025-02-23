@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Sprite[] numberedSprites;
     [SerializeField] Sprite currentSprite;
     private SpriteRenderer spriteRenderer;
-    private int currentValue = 0;
+    public int currentValue = 0;
     
     // Start is called before the first frame update
     void Start()

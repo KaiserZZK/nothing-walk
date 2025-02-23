@@ -92,7 +92,7 @@ public class MapManager : MonoBehaviour
         int prevRow = prevGridPos.y+1;
         int prevCol = prevGridPos.x+1;
         
-        Debug.Log($"movement, {previousGridPosition}, {currentGridPosition}");
+        // Debug.Log($"movement, {previousGridPosition}, {currentGridPosition}");
         
         bool movedHorizontally = currentRow == prevRow; // Same row -> only col sum changes
         bool movedVertically = currentCol == prevCol;   // Same column -> both rows change
@@ -105,15 +105,18 @@ public class MapManager : MonoBehaviour
                 colSums[prevCol] -= previousPlayerValue;
                 colSums[prevCol] = ((colSums[prevCol] % 7) + 7) % 7; 
             };
-            
-            colSums[currentCol] += (currentPlayerValue - currentTileValue);
-            colSums[currentCol] %= 7;
+
+            if (colSums.ContainsKey(currentCol))
+            {
+                colSums[currentCol] += (currentPlayerValue - currentTileValue);
+                colSums[currentCol] %= 7;
+            }
             
             if (colSums.ContainsKey(currentCol))
             {
                 if (colSums[currentCol] != originalColSums[currentCol])
                 {
-                    Debug.Log($"Col {currentCol} updated: {colSums[currentCol]} (original: {originalColSums[currentCol]})");
+                    // Debug.Log($"Col {currentCol} updated: {colSums[currentCol]} (original: {originalColSums[currentCol]})");
                     AlterMonitorState(currentCol, true, true);
                 }
                 else
@@ -126,7 +129,7 @@ public class MapManager : MonoBehaviour
             {
                 if (colSums[prevCol] != originalColSums[prevCol])
                 {
-                    Debug.Log($"Col {prevCol} updated: {colSums[prevCol]} (original: {originalColSums[prevCol]})");
+                    // Debug.Log($"Col {prevCol} updated: {colSums[prevCol]} (original: {originalColSums[prevCol]})");
                     AlterMonitorState(prevCol, true, true);
                 }
                 else
@@ -139,22 +142,25 @@ public class MapManager : MonoBehaviour
 
         if (movedVertically)
         {
-            Debug.Log($"Moved vertically, {prevGridPos} to {newGridPos}");
+            // Debug.Log($"Moved vertically, {prevGridPos} to {newGridPos}");
             if (rowSums.ContainsKey(prevRow))
             {
                 rowSums[prevRow] -= previousPlayerValue;
                 rowSums[prevRow] = ((rowSums[prevRow] % 7) + 7) % 7; 
-
             };
 
-            rowSums[currentRow] += (currentPlayerValue - currentTileValue);
-            rowSums[currentRow] %= 7;
+            if (rowSums.ContainsKey(currentRow))
+            {
+                rowSums[currentRow] += (currentPlayerValue - currentTileValue);
+                rowSums[currentRow] %= 7;
+            }
+
             
             if (rowSums.ContainsKey(currentRow))
             {
                 if (rowSums[currentRow] != originalRowSums[currentRow])
                 {
-                    Debug.Log($"Row {currentRow} updated: {rowSums[currentRow]} (original: {originalRowSums[currentRow]})");
+                    // Debug.Log($"Row {currentRow} updated: {rowSums[currentRow]} (original: {originalRowSums[currentRow]})");
                     AlterMonitorState(currentRow, false, true);
                 }
                 else
@@ -167,7 +173,7 @@ public class MapManager : MonoBehaviour
             {
                 if (rowSums[prevRow] != originalRowSums[prevRow])
                 {
-                    Debug.Log($"Row {prevRow} updated: {rowSums[prevRow]} (original: {originalRowSums[prevRow]})");
+                    // Debug.Log($"Row {prevRow} updated: {rowSums[prevRow]} (original: {originalRowSums[prevRow]})");
                     AlterMonitorState(prevRow, false, true);
                 } else
                 {
@@ -207,8 +213,8 @@ public class MapManager : MonoBehaviour
         TileBase monitorTile = map.GetTile(currentMonitorGridPosition);
         if (monitorTile != null)
         {
-            TileData monitorTileData = dataFromTiles[monitorTile];
-            Debug.Log($"Modifying {currentMonitorGridPosition}, {isCol}, previouly {monitorTileData.isWrong} to {isWrong}");
+            // TileData monitorTileData = dataFromTiles[monitorTile];
+            // Debug.Log($"Modifying {currentMonitorGridPosition}, {isCol}, previouly {monitorTileData.isWrong} to {isWrong}");
             // monitorTileData.isWrong = isWrong;
             map.SetTile(currentMonitorGridPosition, newMonitorTile);
         }
@@ -293,7 +299,7 @@ public class MapManager : MonoBehaviour
         {
             if (tileData.isMonitor)
             {
-                Debug.Log($"I should work!, {tileData.isWrong}, player value: {playerValue}");
+                // Debug.Log($"I should work!, {tileData.isWrong}, player value: {playerValue}");
                 return (!tileData.isWrong) | (playerValue != 0);
             }
         }
